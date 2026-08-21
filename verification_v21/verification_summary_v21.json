@@ -1,0 +1,17 @@
+{
+  "status": "PASS",
+  "version": "2.1",
+  "checks_passed": 1080,
+  "checks_total": 1080,
+  "market_data_sha256": "54e965d435da3b26ecc50cb6df7bc193d6b66a9b202837b9d2002a9e7384c715",
+  "rates_sha256": "b73beaedaaf92394adf94ed7de7660ccf52e8ca5ae63a8cb6c69edb0ad29f461",
+  "max_scale_invariance_difference": 4.440892098500626e-16,
+  "clean_run_log": "verification_v21/clean_run_v21.log",
+  "limitations_not_removed": [
+    "no intraday realized variance",
+    "no sponsor NAV history",
+    "SPY realized-variance proxy versus SPX-option indices",
+    "no VIX9D implementation",
+    "no Nasdaq-100/VXN or other-market replication"
+  ]
+}

@@ -1,0 +1,24 @@
+{
+  "generated_utc": "2026-08-17T00:37:25.837900+00:00",
+  "python": "3.13.5 (main, Jul 15 2026, 20:25:40) [GCC 14.2.0]",
+  "platform": "Linux-6.18.35-x86_64-with-glibc2.41",
+  "market_data_sha256": "54e965d435da3b26ecc50cb6df7bc193d6b66a9b202837b9d2002a9e7384c715",
+  "rates_sha256": "b73beaedaaf92394adf94ed7de7660ccf52e8ca5ae63a8cb6c69edb0ad29f461",
+  "rows": 4023,
+  "start": "2010-01-04",
+  "end": "2025-12-30",
+  "horizons": [
+    5,
+    22,
+    66
+  ],
+  "funds": {
+    "SSO": 2.0,
+    "UPRO": 3.0,
+    "SDS": -2.0,
+    "SPXU": -3.0
+  },
+  "min_train": 750,
+  "seed": 20260816,
+  "bootstrap_replications": 4999
+}

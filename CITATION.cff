@@ -1,0 +1,14 @@
+cff-version: 1.2.0
+message: "If you use these replication materials, please cite the working paper."
+title: "Replication materials for When Does Option-Implied Variance Add to Physical Forecasts? Evidence from S&P 500 Leveraged ETF Drag"
+type: dataset
+authors:
+  - family-names: Goyle
+    given-names: Kartikay
+  - family-names: Revtsov
+    given-names: Yevgen
+version: "2.1"
+date-released: 2026-08-20
+doi: 10.2139/ssrn.7119799
+url: "https://ssrn.com/abstract=7119799"
+repository-code: "https://github.com/kartikay18/Option_Implied_Variance_Code"

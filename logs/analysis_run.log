@@ -1,0 +1,18 @@
+V2 analysis completed successfully
+model      har3    har4    harq  harqts  mean    q_mz   q_raw
+horizon
+5        0.1281  0.1138  0.1862  0.2544   0.0  0.3013  0.3523
+22       0.1579  0.1425  0.1868  0.1922   0.0  0.1792  0.1837
+66       0.0396  0.0246  0.0567  0.0595   0.0  0.0634 -0.2041
+
+Selected comparisons
+ horizon model_a model_b   hac_t  hac_p  block_p  cw_p_one_sided
+       5    q_mz   q_raw -1.5652 0.1175   0.0858          0.5922
+       5    q_mz    har4  0.9634 0.3353   0.3346             NaN
+       5  harqts    har4  1.5246 0.1274   0.0816          0.0289
+      22    q_mz   q_raw -0.0727 0.9420   0.9504          0.1285
+      22    q_mz    har4  1.4123 0.1579   0.1392             NaN
+      22  harqts    har4  1.5120 0.1305   0.1038          0.0228
+      66    q_mz   q_raw  2.3320 0.0197   0.0214          0.0069
+      66    q_mz    har4  1.3377 0.1810   0.1582             NaN
+      66  harqts    har4  1.1090 0.2674   0.2626          0.0717

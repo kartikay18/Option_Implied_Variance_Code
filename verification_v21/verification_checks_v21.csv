@@ -1,0 +1,1081 @@
+check,pass,detail
+hardening version is 2.1,True,2.1
+market data hash,True,54e965d435da3b26ecc50cb6df7bc193d6b66a9b202837b9d2002a9e7384c715
+rates hash,True,b73beaedaaf92394adf94ed7de7660ccf52e8ca5ae63a8cb6c69edb0ad29f461
+all core data checks pass,True,
+5d row count,True,3198
+5d target follows origin,True,
+5d training resolves by origin,True,
+5d minimum training sample,True,750
+5d finite row-level values,True,
+5d OOS R2 mean,True,0 vs 0
+5d OOS R2 q_raw,True,0.352329911151447 vs 0.352329911151446
+5d OOS R2 q_mz,True,0.301314106210205 vs 0.301314106210206
+5d OOS R2 har3,True,0.12811747872979 vs 0.12811747872979
+5d OOS R2 har4,True,0.113793794885366 vs 0.113793794885367
+5d OOS R2 harq,True,0.186222631644652 vs 0.186222631644652
+5d OOS R2 harqts,True,0.254413555293004 vs 0.254413555293003
+22d row count,True,3164
+22d target follows origin,True,
+22d training resolves by origin,True,
+22d minimum training sample,True,750
+22d finite row-level values,True,
+22d OOS R2 mean,True,0 vs 0
+22d OOS R2 q_raw,True,0.183654928000033 vs 0.183654928000032
+22d OOS R2 q_mz,True,0.179194529470816 vs 0.179194529470816
+22d OOS R2 har3,True,0.157910084907666 vs 0.157910084907665
+22d OOS R2 har4,True,0.142478041102618 vs 0.142478041102618
+22d OOS R2 harq,True,0.186804815590456 vs 0.186804815590456
+22d OOS R2 harqts,True,0.192160166838622 vs 0.192160166838621
+66d row count,True,3076
+66d target follows origin,True,
+66d training resolves by origin,True,
+66d minimum training sample,True,750
+66d finite row-level values,True,
+66d OOS R2 mean,True,0 vs 0
+66d OOS R2 q_raw,True,-0.204100887776978 vs -0.204100887776978
+66d OOS R2 q_mz,True,0.0633938450486722 vs 0.0633938450486724
+66d OOS R2 har3,True,0.0395924988490136 vs 0.0395924988490138
+66d OOS R2 har4,True,0.0246326340471701 vs 0.0246326340471702
+66d OOS R2 harq,True,0.0566680846428133 vs 0.0566680846428131
+66d OOS R2 harqts,True,0.0594984174725879 vs 0.0594984174725877
+66d MZ-vs-raw mean loss gain,True,
+66d MZ-vs-raw HAC t,True,2.332038287880156 vs 2.3320382878801578
+66d MZ-vs-raw HAC p,True,0.01969867703317469 vs 0.0196986770331746
+66d encompassing option coefficient,True,
+66d encompassing option p,True,
+66d MZ option vs raw option MSE mean,True,
+66d MZ option vs raw option MSE HAC t,True,
+66d MZ option vs raw option MSE HAC p,True,
+66d MZ option vs raw option MAE mean,True,
+66d MZ option vs raw option MAE HAC t,True,
+66d MZ option vs raw option MAE HAC p,True,
+66d MZ option vs raw option QLIKE mean,True,
+66d MZ option vs raw option QLIKE HAC t,True,
+66d MZ option vs raw option QLIKE HAC p,True,
+66d MZ option vs HAR(4) MSE mean,True,
+66d MZ option vs HAR(4) MSE HAC t,True,
+66d MZ option vs HAR(4) MSE HAC p,True,
+66d MZ option vs HAR(4) MAE mean,True,
+66d MZ option vs HAR(4) MAE HAC t,True,
+66d MZ option vs HAR(4) MAE HAC p,True,
+66d MZ option vs HAR(4) QLIKE mean,True,
+66d MZ option vs HAR(4) QLIKE HAC t,True,
+66d MZ option vs HAR(4) QLIKE HAC p,True,
+66d HAR + option + term vs HAR(4) MSE mean,True,
+66d HAR + option + term vs HAR(4) MSE HAC t,True,
+66d HAR + option + term vs HAR(4) MSE HAC p,True,
+66d HAR + option + term vs HAR(4) MAE mean,True,
+66d HAR + option + term vs HAR(4) MAE HAC t,True,
+66d HAR + option + term vs HAR(4) MAE HAC p,True,
+66d HAR + option + term vs HAR(4) QLIKE mean,True,
+66d HAR + option + term vs HAR(4) QLIKE HAC t,True,
+66d HAR + option + term vs HAR(4) QLIKE HAC p,True,
+MZ beats raw under 66d MSE,True,
+MZ beats raw under 66d MAE,True,
+no false QLIKE dominance claim,True,"{'horizon': 66, 'comparison': 'MZ option vs raw option', 'model_a': 'q_mz', 'model_b': 'q_raw', 'loss': 'QLIKE', 'floor_fraction_of_mean_target': 0.01, 'floor_value': 7.81107198863546e-05, 'n': 3076, 'delta_oos_r2': 0.2674947328256498, 'mean_loss_gain_a_over_b': -0.0084869182796358, 'hac_lags': 71, 'hac_t': -0.0941188440646164, 'hac_p': 0.9250147514283172, 'block_length': 71, 'block_p': 0.9218}"
+66d HAC sensitivity remains below 0.03,True,[0.01880192 0.01969868 0.02750138]
+66d block sensitivity remains below 0.03,True,[0.0198 0.0246 0.0244]
+raw 66d forecast mean ratio,True,
+MZ reduces squared-bias share,True,
+MZ does not increase correlation,True,
+idealized leverage scale invariance,True,4.440892098500626e-16
+66d calendar scaling q_raw,True,-0.2054106816823495
+66d calendar scaling q_mz,True,0.0632851434087526
+full regime matches baseline MZ,True,
+event-exclusion MZ remains positive,True,
+fund 66d R2 SSO q_raw,True,
+fund 66d R2 SSO q_mz,True,
+fund 66d R2 SSO har4,True,
+fund 66d R2 SSO harqts,True,
+fund 66d R2 UPRO q_raw,True,
+fund 66d R2 UPRO q_mz,True,
+fund 66d R2 UPRO har4,True,
+fund 66d R2 UPRO harqts,True,
+fund 66d R2 SDS q_raw,True,
+fund 66d R2 SDS q_mz,True,
+fund 66d R2 SDS har4,True,
+fund 66d R2 SDS harqts,True,
+fund 66d R2 SPXU q_raw,True,
+fund 66d R2 SPXU q_mz,True,
+fund 66d R2 SPXU har4,True,
+fund 66d R2 SPXU harqts,True,
+all nonoverlap offsets present,True,"{5: 5, 22: 22, 66: 66}"
+future-data perturbation passes,True,"[{'horizon': 5, 'n_compared': 1696, 'max_abs_difference': 0.0, 'pass': True}, {'horizon': 22, 'n_compared': 1679, 'max_abs_difference': 0.0, 'pass': True}, {'horizon': 66, 'n_compared': 1635, 'max_abs_difference': 0.0, 'pass': True}]"
+obsolete phrase absent: only the probability measure changes,True,
+obsolete phrase absent: cleanly identifies,True,
+obsolete phrase absent: HAR-RV,True,
+obsolete phrase absent: [REPOSITORY,True,
+obsolete phrase absent: TODO,True,
+obsolete phrase absent: Revstov,True,
+obsolete phrase absent: independent verification script,True,
+anonymous source lacks Kartikay,True,
+anonymous source lacks Goyle,True,
+anonymous source lacks Yevgen,True,
+anonymous source lacks Revtsov,True,
+anonymous source lacks goylekar,True,
+anonymous source lacks yrevtsov,True,
+named source contains both authors,True,
+required qualification present: not under QLIKE,True,
+required qualification present: no loss-uniform dominance,True,
+required qualification present: scaling alone cannot change R2,True,
+required qualification present: SPY-SPX basis,True,
+required qualification present: ex post diagnostics,True,
+required qualification present: not a substitute for intraday realized variance,True,
+required qualification present: not significantly outperform the HAR(4),True,
+required qualification present: VIX9D,True,
+required qualification present: outside the implemented analysis,True,
+headline token in source: 0.352,True,
+headline token in source: 0.184,True,
+headline token in source: -0.204,True,
+headline token in source: 0.063,True,
+headline token in source: 0.020,True,
+headline token in source: 0.021,True,
+headline token in source: 0.181,True,
+headline token in source: 0.925,True,
+headline token in source: 1.431,True,
+headline token in source: 0.883,True,
+headline token in source: 4.44e-16,True,
+headline token in source: 11.48,True,
+no Unicode em dash,True,
+no prose triple-hyphen,True,
+data availability matches public archive,True,
+table fragment nonempty table1_variance_performance.tex,True,316
+LaTeX row terminator table1_variance_performance.tex:3,True,Horizon & Raw option & MZ option & HAR(3) & HAR(4) & HAR+option & HAR+option+term \\
+LaTeX row terminator table1_variance_performance.tex:5,True,5 & 0.352 & 0.301 & 0.128 & 0.114 & 0.186 & 0.254 \\
+LaTeX row terminator table1_variance_performance.tex:6,True,22 & 0.184 & 0.179 & 0.158 & 0.142 & 0.187 & 0.192 \\
+LaTeX row terminator table1_variance_performance.tex:7,True,66 & -0.204 & 0.063 & 0.040 & 0.025 & 0.057 & 0.059 \\
+table fragment nonempty table2_pairwise_tests.tex,True,795
+LaTeX row terminator table2_pairwise_tests.tex:3,True,Horizon & Comparison & $\Delta R^2_{OOS}$ & HAC $t$ & HAC $p$ & Block $p$ & CW $p$ \\
+LaTeX row terminator table2_pairwise_tests.tex:5,True,5 & MZ vs raw option & -0.051 & -1.57 & 0.118 & 0.086 & 0.592 \\
+LaTeX row terminator table2_pairwise_tests.tex:6,True,5 & MZ option vs HAR(4) & 0.188 & 0.96 & 0.335 & 0.335 &  \\
+LaTeX row terminator table2_pairwise_tests.tex:7,True,5 & HAR+option+term vs HAR(4) & 0.141 & 1.52 & 0.127 & 0.082 & 0.029 \\
+LaTeX row terminator table2_pairwise_tests.tex:9,True,22 & MZ vs raw option & -0.004 & -0.07 & 0.942 & 0.950 & 0.128 \\
+LaTeX row terminator table2_pairwise_tests.tex:10,True,22 & MZ option vs HAR(4) & 0.037 & 1.41 & 0.158 & 0.139 &  \\
+LaTeX row terminator table2_pairwise_tests.tex:11,True,22 & HAR+option+term vs HAR(4) & 0.050 & 1.51 & 0.131 & 0.104 & 0.023 \\
+LaTeX row terminator table2_pairwise_tests.tex:13,True,66 & MZ vs raw option & 0.267 & 2.33 & 0.020 & 0.021 & 0.007 \\
+LaTeX row terminator table2_pairwise_tests.tex:14,True,66 & MZ option vs HAR(4) & 0.039 & 1.34 & 0.181 & 0.158 &  \\
+LaTeX row terminator table2_pairwise_tests.tex:15,True,66 & HAR+option+term vs HAR(4) & 0.035 & 1.11 & 0.267 & 0.263 & 0.072 \\
+table fragment nonempty table3_encompassing.tex,True,536
+LaTeX row terminator table3_encompassing.tex:3,True,Horizon & Option forecast & $\beta_{HAR}$ & $p$ & $\beta_{option}$ & $p$ & $R^2$ \\
+LaTeX row terminator table3_encompassing.tex:5,True,5 & Raw & 0.040 & 0.762 & 1.299 & 0.004 & 0.384 \\
+LaTeX row terminator table3_encompassing.tex:6,True,5 & MZ-calibrated & 0.194 & 0.122 & 0.648 & 0.000 & 0.313 \\
+LaTeX row terminator table3_encompassing.tex:8,True,22 & Raw & -0.112 & 0.551 & 0.836 & 0.001 & 0.206 \\
+LaTeX row terminator table3_encompassing.tex:9,True,22 & MZ-calibrated & 0.231 & 0.070 & 0.818 & 0.001 & 0.174 \\
+LaTeX row terminator table3_encompassing.tex:11,True,66 & Raw & 0.147 & 0.229 & 0.273 & 0.005 & 0.062 \\
+LaTeX row terminator table3_encompassing.tex:12,True,66 & MZ-calibrated & 0.311 & 0.046 & 0.406 & 0.268 & 0.051 \\
+table fragment nonempty table4_regime_robustness.tex,True,654
+LaTeX row terminator table4_regime_robustness.tex:3,True,Sample & $N$ & Raw option & MZ option & HAR(4) & HAR+option+term \\
+LaTeX row terminator table4_regime_robustness.tex:5,True,Full sample & 3076 & -0.204 & 0.063 & 0.025 & 0.059 \\
+LaTeX row terminator table4_regime_robustness.tex:6,True,Pre-2020 & 1635 & -0.111 & 0.056 & 0.012 & 0.015 \\
+LaTeX row terminator table4_regime_robustness.tex:7,True,2020 onward & 1441 & -0.227 & 0.065 & 0.028 & 0.070 \\
+LaTeX row terminator table4_regime_robustness.tex:8,True,Exclude 2020 origins & 2823 & -0.282 & 0.092 & 0.020 & 0.040 \\
+LaTeX row terminator table4_regime_robustness.tex:9,True,Exclude windows touching 2018/2020/2022 & 2123 & -0.751 & 0.171 & 0.079 & 0.159 \\
+LaTeX row terminator table4_regime_robustness.tex:10,True,VIX below 75th percentile & 2305 & -0.008 & 0.004 & -0.001 & 0.004 \\
+LaTeX row terminator table4_regime_robustness.tex:11,True,VIX at/above 75th percentile & 771 & -0.781 & 0.238 & 0.099 & 0.224 \\
+LaTeX row terminator table4_regime_robustness.tex:12,True,Exclude top 1 percent RV & 3045 & -0.420 & 0.123 & 0.042 & 0.093 \\
+table fragment nonempty table5_fund_mapping.tex,True,358
+LaTeX row terminator table5_fund_mapping.tex:3,True,Fund & $\beta$ & $\gamma$ & Mapping $R^2$ & Signal/noise & Raw drag $R^2$ & MZ drag $R^2$ \\
+LaTeX row terminator table5_fund_mapping.tex:5,True,SSO & 2 & 1 & 0.849 & 2.106 & -0.042 & 0.026 \\
+LaTeX row terminator table5_fund_mapping.tex:6,True,UPRO & 3 & 3 & 0.929 & 2.972 & -0.073 & 0.034 \\
+LaTeX row terminator table5_fund_mapping.tex:7,True,SDS & -2 & 3 & 0.859 & 2.288 & -0.192 & 0.082 \\
+LaTeX row terminator table5_fund_mapping.tex:8,True,SPXU & -3 & 6 & 0.929 & 3.348 & -0.183 & 0.082 \\
+table fragment nonempty table_s5_alternative_loss_v21.tex,True,1988
+LaTeX row terminator table_s5_alternative_loss_v21.tex:3,True,$h$ & Comparison & Loss & Gain & HAC $t$ & HAC $p$ \\
+LaTeX row terminator table_s5_alternative_loss_v21.tex:5,True,5 & MZ option vs raw option & MSE & -1.53576e-07 & -1.57 & 0.118 \\
+LaTeX row terminator table_s5_alternative_loss_v21.tex:6,True,5 & MZ option vs raw option & MAE & 5.81625e-05 & 5.44 & 0.000 \\
+LaTeX row terminator table_s5_alternative_loss_v21.tex:7,True,5 & MZ option vs raw option & QLIKE & -0.161784 & -1.72 & 0.085 \\
+LaTeX row terminator table_s5_alternative_loss_v21.tex:8,True,5 & MZ option vs HAR(4) & MSE & 5.64505e-07 & 0.96 & 0.335 \\
+LaTeX row terminator table_s5_alternative_loss_v21.tex:9,True,5 & MZ option vs HAR(4) & MAE & 2.63528e-05 & 1.14 & 0.256 \\
+LaTeX row terminator table_s5_alternative_loss_v21.tex:10,True,5 & MZ option vs HAR(4) & QLIKE & -0.163195 & -1.75 & 0.080 \\
+LaTeX row terminator table_s5_alternative_loss_v21.tex:11,True,5 & HAR + option + term vs HAR(4) & MSE & 4.23317e-07 & 1.52 & 0.127 \\
+LaTeX row terminator table_s5_alternative_loss_v21.tex:12,True,5 & HAR + option + term vs HAR(4) & MAE & 4.44724e-05 & 3.73 & 0.000 \\
+LaTeX row terminator table_s5_alternative_loss_v21.tex:13,True,5 & HAR + option + term vs HAR(4) & QLIKE & -2.28661 & -2.94 & 0.003 \\
+LaTeX row terminator table_s5_alternative_loss_v21.tex:15,True,22 & MZ option vs raw option & MSE & -1.52861e-07 & -0.07 & 0.942 \\
+LaTeX row terminator table_s5_alternative_loss_v21.tex:16,True,22 & MZ option vs raw option & MAE & 0.000421973 & 7.28 & 0.000 \\
+LaTeX row terminator table_s5_alternative_loss_v21.tex:17,True,22 & MZ option vs raw option & QLIKE & -0.00708652 & -0.16 & 0.872 \\
+LaTeX row terminator table_s5_alternative_loss_v21.tex:18,True,22 & MZ option vs HAR(4) & MSE & 1.2583e-06 & 1.41 & 0.158 \\
+LaTeX row terminator table_s5_alternative_loss_v21.tex:19,True,22 & MZ option vs HAR(4) & MAE & 0.000165631 & 2.79 & 0.005 \\
+LaTeX row terminator table_s5_alternative_loss_v21.tex:20,True,22 & MZ option vs HAR(4) & QLIKE & 0.0415221 & 2.77 & 0.006 \\
+LaTeX row terminator table_s5_alternative_loss_v21.tex:21,True,22 & HAR + option + term vs HAR(4) & MSE & 1.70265e-06 & 1.51 & 0.131 \\
+LaTeX row terminator table_s5_alternative_loss_v21.tex:22,True,22 & HAR + option + term vs HAR(4) & MAE & 9.06296e-05 & 1.65 & 0.098 \\
+LaTeX row terminator table_s5_alternative_loss_v21.tex:23,True,22 & HAR + option + term vs HAR(4) & QLIKE & -1.61793 & -1.66 & 0.097 \\
+LaTeX row terminator table_s5_alternative_loss_v21.tex:25,True,66 & MZ option vs raw option & MSE & 4.1482e-05 & 2.33 & 0.020 \\
+LaTeX row terminator table_s5_alternative_loss_v21.tex:26,True,66 & MZ option vs raw option & MAE & 0.00263106 & 4.59 & 0.000 \\
+LaTeX row terminator table_s5_alternative_loss_v21.tex:27,True,66 & MZ option vs raw option & QLIKE & -0.00848692 & -0.09 & 0.925 \\
+LaTeX row terminator table_s5_alternative_loss_v21.tex:28,True,66 & MZ option vs HAR(4) & MSE & 6.01093e-06 & 1.34 & 0.181 \\
+LaTeX row terminator table_s5_alternative_loss_v21.tex:29,True,66 & MZ option vs HAR(4) & MAE & 0.000428272 & 1.77 & 0.076 \\
+LaTeX row terminator table_s5_alternative_loss_v21.tex:30,True,66 & MZ option vs HAR(4) & QLIKE & 1.304 & 1.11 & 0.268 \\
+LaTeX row terminator table_s5_alternative_loss_v21.tex:31,True,66 & HAR + option + term vs HAR(4) & MSE & 5.40684e-06 & 1.11 & 0.267 \\
+LaTeX row terminator table_s5_alternative_loss_v21.tex:32,True,66 & HAR + option + term vs HAR(4) & MAE & 0.000125917 & 1.01 & 0.312 \\
+LaTeX row terminator table_s5_alternative_loss_v21.tex:33,True,66 & HAR + option + term vs HAR(4) & QLIKE & -0.324005 & -0.98 & 0.328 \\
+table fragment nonempty table_s6_inference_sensitivity_v21.tex,True,3386
+LaTeX row terminator table_s6_inference_sensitivity_v21.tex:3,True,$h$ & Comparison & Method & Parameter & Statistic & $p$ \\
+LaTeX row terminator table_s6_inference_sensitivity_v21.tex:5,True,5 & MZ option vs raw option & HAC & 4 & -2.12 & 0.034 \\
+LaTeX row terminator table_s6_inference_sensitivity_v21.tex:6,True,5 & MZ option vs raw option & HAC & 10 & -1.57 & 0.118 \\
+LaTeX row terminator table_s6_inference_sensitivity_v21.tex:7,True,5 & MZ option vs raw option & circular_block_bootstrap & 4 &  & 0.024 \\
+LaTeX row terminator table_s6_inference_sensitivity_v21.tex:8,True,5 & MZ option vs raw option & circular_block_bootstrap & 10 &  & 0.087 \\
+LaTeX row terminator table_s6_inference_sensitivity_v21.tex:9,True,5 & MZ option vs HAR(4) & HAC & 4 & 0.89 & 0.372 \\
+LaTeX row terminator table_s6_inference_sensitivity_v21.tex:10,True,5 & MZ option vs HAR(4) & HAC & 10 & 0.96 & 0.335 \\
+LaTeX row terminator table_s6_inference_sensitivity_v21.tex:11,True,5 & MZ option vs HAR(4) & circular_block_bootstrap & 4 &  & 0.355 \\
+LaTeX row terminator table_s6_inference_sensitivity_v21.tex:12,True,5 & MZ option vs HAR(4) & circular_block_bootstrap & 10 &  & 0.328 \\
+LaTeX row terminator table_s6_inference_sensitivity_v21.tex:13,True,5 & HAR + option + term vs HAR(4) & HAC & 4 & 1.71 & 0.088 \\
+LaTeX row terminator table_s6_inference_sensitivity_v21.tex:14,True,5 & HAR + option + term vs HAR(4) & HAC & 10 & 1.52 & 0.127 \\
+LaTeX row terminator table_s6_inference_sensitivity_v21.tex:15,True,5 & HAR + option + term vs HAR(4) & circular_block_bootstrap & 4 &  & 0.051 \\
+LaTeX row terminator table_s6_inference_sensitivity_v21.tex:16,True,5 & HAR + option + term vs HAR(4) & circular_block_bootstrap & 10 &  & 0.081 \\
+LaTeX row terminator table_s6_inference_sensitivity_v21.tex:18,True,22 & MZ option vs raw option & HAC & 21 & -0.07 & 0.944 \\
+LaTeX row terminator table_s6_inference_sensitivity_v21.tex:19,True,22 & MZ option vs raw option & HAC & 27 & -0.07 & 0.942 \\
+LaTeX row terminator table_s6_inference_sensitivity_v21.tex:20,True,22 & MZ option vs raw option & HAC & 44 & -0.08 & 0.938 \\
+LaTeX row terminator table_s6_inference_sensitivity_v21.tex:21,True,22 & MZ option vs raw option & circular_block_bootstrap & 21 &  & 0.952 \\
+LaTeX row terminator table_s6_inference_sensitivity_v21.tex:22,True,22 & MZ option vs raw option & circular_block_bootstrap & 27 &  & 0.954 \\
+LaTeX row terminator table_s6_inference_sensitivity_v21.tex:23,True,22 & MZ option vs raw option & circular_block_bootstrap & 44 &  & 0.936 \\
+LaTeX row terminator table_s6_inference_sensitivity_v21.tex:24,True,22 & MZ option vs HAR(4) & HAC & 21 & 1.33 & 0.183 \\
+LaTeX row terminator table_s6_inference_sensitivity_v21.tex:25,True,22 & MZ option vs HAR(4) & HAC & 27 & 1.41 & 0.158 \\
+LaTeX row terminator table_s6_inference_sensitivity_v21.tex:26,True,22 & MZ option vs HAR(4) & HAC & 44 & 1.44 & 0.150 \\
+LaTeX row terminator table_s6_inference_sensitivity_v21.tex:27,True,22 & MZ option vs HAR(4) & circular_block_bootstrap & 21 &  & 0.166 \\
+LaTeX row terminator table_s6_inference_sensitivity_v21.tex:28,True,22 & MZ option vs HAR(4) & circular_block_bootstrap & 27 &  & 0.147 \\
+LaTeX row terminator table_s6_inference_sensitivity_v21.tex:29,True,22 & MZ option vs HAR(4) & circular_block_bootstrap & 44 &  & 0.135 \\
+LaTeX row terminator table_s6_inference_sensitivity_v21.tex:30,True,22 & HAR + option + term vs HAR(4) & HAC & 21 & 1.60 & 0.110 \\
+LaTeX row terminator table_s6_inference_sensitivity_v21.tex:31,True,22 & HAR + option + term vs HAR(4) & HAC & 27 & 1.51 & 0.131 \\
+LaTeX row terminator table_s6_inference_sensitivity_v21.tex:32,True,22 & HAR + option + term vs HAR(4) & HAC & 44 & 1.34 & 0.180 \\
+LaTeX row terminator table_s6_inference_sensitivity_v21.tex:33,True,22 & HAR + option + term vs HAR(4) & circular_block_bootstrap & 21 &  & 0.093 \\
+LaTeX row terminator table_s6_inference_sensitivity_v21.tex:34,True,22 & HAR + option + term vs HAR(4) & circular_block_bootstrap & 27 &  & 0.111 \\
+LaTeX row terminator table_s6_inference_sensitivity_v21.tex:35,True,22 & HAR + option + term vs HAR(4) & circular_block_bootstrap & 44 &  & 0.169 \\
+LaTeX row terminator table_s6_inference_sensitivity_v21.tex:37,True,66 & MZ option vs raw option & HAC & 65 & 2.35 & 0.019 \\
+LaTeX row terminator table_s6_inference_sensitivity_v21.tex:38,True,66 & MZ option vs raw option & HAC & 71 & 2.33 & 0.020 \\
+LaTeX row terminator table_s6_inference_sensitivity_v21.tex:39,True,66 & MZ option vs raw option & HAC & 132 & 2.20 & 0.028 \\
+LaTeX row terminator table_s6_inference_sensitivity_v21.tex:40,True,66 & MZ option vs raw option & circular_block_bootstrap & 65 &  & 0.020 \\
+LaTeX row terminator table_s6_inference_sensitivity_v21.tex:41,True,66 & MZ option vs raw option & circular_block_bootstrap & 71 &  & 0.025 \\
+LaTeX row terminator table_s6_inference_sensitivity_v21.tex:42,True,66 & MZ option vs raw option & circular_block_bootstrap & 132 &  & 0.024 \\
+LaTeX row terminator table_s6_inference_sensitivity_v21.tex:43,True,66 & MZ option vs HAR(4) & HAC & 65 & 1.31 & 0.189 \\
+LaTeX row terminator table_s6_inference_sensitivity_v21.tex:44,True,66 & MZ option vs HAR(4) & HAC & 71 & 1.34 & 0.181 \\
+LaTeX row terminator table_s6_inference_sensitivity_v21.tex:45,True,66 & MZ option vs HAR(4) & HAC & 132 & 1.47 & 0.142 \\
+LaTeX row terminator table_s6_inference_sensitivity_v21.tex:46,True,66 & MZ option vs HAR(4) & circular_block_bootstrap & 65 &  & 0.161 \\
+LaTeX row terminator table_s6_inference_sensitivity_v21.tex:47,True,66 & MZ option vs HAR(4) & circular_block_bootstrap & 71 &  & 0.149 \\
+LaTeX row terminator table_s6_inference_sensitivity_v21.tex:48,True,66 & MZ option vs HAR(4) & circular_block_bootstrap & 132 &  & 0.125 \\
+LaTeX row terminator table_s6_inference_sensitivity_v21.tex:49,True,66 & HAR + option + term vs HAR(4) & HAC & 65 & 1.12 & 0.263 \\
+LaTeX row terminator table_s6_inference_sensitivity_v21.tex:50,True,66 & HAR + option + term vs HAR(4) & HAC & 71 & 1.11 & 0.267 \\
+LaTeX row terminator table_s6_inference_sensitivity_v21.tex:51,True,66 & HAR + option + term vs HAR(4) & HAC & 132 & 1.08 & 0.279 \\
+LaTeX row terminator table_s6_inference_sensitivity_v21.tex:52,True,66 & HAR + option + term vs HAR(4) & circular_block_bootstrap & 65 &  & 0.248 \\
+LaTeX row terminator table_s6_inference_sensitivity_v21.tex:53,True,66 & HAR + option + term vs HAR(4) & circular_block_bootstrap & 71 &  & 0.265 \\
+LaTeX row terminator table_s6_inference_sensitivity_v21.tex:54,True,66 & HAR + option + term vs HAR(4) & circular_block_bootstrap & 132 &  & 0.282 \\
+table fragment nonempty table_s7_calibration_diagnostics_v21.tex,True,418
+LaTeX row terminator table_s7_calibration_diagnostics_v21.tex:3,True,Model & Mean forecast/mean RV & Bias & Bias share & Corr. & Eval. slope & OOS $R^2$ \\
+LaTeX row terminator table_s7_calibration_diagnostics_v21.tex:5,True,Raw option & 1.431 & -0.003370 & 0.061 & 0.245 & 0.340 & -0.204 \\
+LaTeX row terminator table_s7_calibration_diagnostics_v21.tex:6,True,MZ option & 0.883 & 0.000917 & 0.006 & 0.207 & 0.771 & 0.063 \\
+LaTeX row terminator table_s7_calibration_diagnostics_v21.tex:7,True,HAR(4) & 0.887 & 0.000884 & 0.005 & 0.213 & 0.496 & 0.025 \\
+LaTeX row terminator table_s7_calibration_diagnostics_v21.tex:8,True,HAR+option+term & 0.835 & 0.001287 & 0.011 & 0.237 & 0.653 & 0.059 \\
+table fragment nonempty table_s8_scale_invariance_v21.tex,True,155
+table fragment nonempty table_s9_calendar_scaling_v21.tex,True,705
+LaTeX row terminator table_s9_calendar_scaling_v21.tex:3,True,$h$ & Model & Trading-day scaling & Calendar-day scaling & Difference \\
+LaTeX row terminator table_s9_calendar_scaling_v21.tex:5,True,5 & Raw option & 0.352 & 0.342 & -0.010 \\
+LaTeX row terminator table_s9_calendar_scaling_v21.tex:6,True,5 & MZ option & 0.301 & 0.294 & -0.007 \\
+LaTeX row terminator table_s9_calendar_scaling_v21.tex:7,True,5 & HAR(4) & 0.114 & 0.114 & 0.000 \\
+LaTeX row terminator table_s9_calendar_scaling_v21.tex:8,True,5 & HAR+option+term & 0.254 & 0.251 & -0.003 \\
+LaTeX row terminator table_s9_calendar_scaling_v21.tex:10,True,22 & Raw option & 0.184 & 0.178 & -0.006 \\
+LaTeX row terminator table_s9_calendar_scaling_v21.tex:11,True,22 & MZ option & 0.179 & 0.178 & -0.002 \\
+LaTeX row terminator table_s9_calendar_scaling_v21.tex:12,True,22 & HAR(4) & 0.142 & 0.142 & 0.000 \\
+LaTeX row terminator table_s9_calendar_scaling_v21.tex:13,True,22 & HAR+option+term & 0.192 & 0.190 & -0.002 \\
+LaTeX row terminator table_s9_calendar_scaling_v21.tex:15,True,66 & Raw option & -0.204 & -0.205 & -0.001 \\
+LaTeX row terminator table_s9_calendar_scaling_v21.tex:16,True,66 & MZ option & 0.063 & 0.063 & -0.000 \\
+LaTeX row terminator table_s9_calendar_scaling_v21.tex:17,True,66 & HAR(4) & 0.025 & 0.025 & 0.000 \\
+LaTeX row terminator table_s9_calendar_scaling_v21.tex:18,True,66 & HAR+option+term & 0.059 & 0.058 & -0.001 \\
+Table 2 reports delta R2,True,
+artifact exists manuscript_anonymous.pdf,True,1184331
+artifact exists manuscript_anonymous.docx,True,974340
+artifact exists manuscript_named.pdf,True,1185052
+artifact exists manuscript_named.docx,True,974900
+artifact exists supplement.pdf,True,54735
+artifact exists supplement.docx,True,16234
+artifact exists title_page.pdf,True,30906
+artifact exists title_page.docx,True,10345
+artifact exists cover_letter.pdf,True,30980
+artifact exists cover_letter.docx,True,10994
+artifact exists response_to_reviewers.pdf,True,41212
+artifact exists response_to_reviewers.docx,True,13441
+anonymous PDF lacks Kartikay,True,
+anonymous PDF lacks Goyle,True,
+anonymous PDF lacks Yevgen,True,
+anonymous PDF lacks Revtsov,True,
+anonymous PDF lacks goylekar,True,
+anonymous PDF lacks yrevtsov,True,
+anonymous PDF contains QLIKE qualification,True,
+existing clean-room run detected,True,/mnt/data/LETF_V2_1_FULL_VERIFIED_PROJECT/verification_v21/clean_run_v21
+clean run produced alternative_loss_tests_v21.csv,True,
+clean shape alternative_loss_tests_v21.csv,True,"(45, 15) vs (45, 15)"
+clean numeric alternative_loss_tests_v21.csv:horizon,True,
+clean text alternative_loss_tests_v21.csv:comparison,True,
+clean text alternative_loss_tests_v21.csv:model_a,True,
+clean text alternative_loss_tests_v21.csv:model_b,True,
+clean text alternative_loss_tests_v21.csv:loss,True,
+clean numeric alternative_loss_tests_v21.csv:floor_fraction_of_mean_target,True,
+clean numeric alternative_loss_tests_v21.csv:floor_value,True,
+clean numeric alternative_loss_tests_v21.csv:n,True,
+clean numeric alternative_loss_tests_v21.csv:delta_oos_r2,True,
+clean numeric alternative_loss_tests_v21.csv:mean_loss_gain_a_over_b,True,
+clean numeric alternative_loss_tests_v21.csv:hac_lags,True,
+clean numeric alternative_loss_tests_v21.csv:hac_t,True,
+clean numeric alternative_loss_tests_v21.csv:hac_p,True,
+clean numeric alternative_loss_tests_v21.csv:block_length,True,
+clean numeric alternative_loss_tests_v21.csv:block_p,True,
+clean run produced calendar_scaling_results_v21.csv,True,
+clean shape calendar_scaling_results_v21.csv,True,"(12, 7) vs (12, 7)"
+clean numeric calendar_scaling_results_v21.csv:horizon,True,
+clean text calendar_scaling_results_v21.csv:model,True,
+clean numeric calendar_scaling_results_v21.csv:n,True,
+clean numeric calendar_scaling_results_v21.csv:trading_day_scaling_oos_r2,True,
+clean numeric calendar_scaling_results_v21.csv:calendar_day_scaling_oos_r2,True,
+clean numeric calendar_scaling_results_v21.csv:difference_calendar_minus_trading,True,
+clean numeric calendar_scaling_results_v21.csv:mean_calendar_days,True,
+clean run produced calibration_diagnostics_v21.csv,True,
+clean shape calibration_diagnostics_v21.csv,True,"(15, 17) vs (15, 17)"
+clean numeric calibration_diagnostics_v21.csv:horizon,True,
+clean text calibration_diagnostics_v21.csv:model,True,
+clean numeric calibration_diagnostics_v21.csv:n,True,
+clean numeric calibration_diagnostics_v21.csv:mean_realized,True,
+clean numeric calibration_diagnostics_v21.csv:mean_forecast,True,
+clean numeric calibration_diagnostics_v21.csv:mean_forecast_to_realized_ratio,True,
+clean numeric calibration_diagnostics_v21.csv:mean_error_realized_minus_forecast,True,
+clean numeric calibration_diagnostics_v21.csv:mean_absolute_error,True,
+clean numeric calibration_diagnostics_v21.csv:mse,True,
+clean numeric calibration_diagnostics_v21.csv:squared_bias_share_of_mse,True,
+clean numeric calibration_diagnostics_v21.csv:correlation,True,
+clean numeric calibration_diagnostics_v21.csv:oos_r2,True,
+clean numeric calibration_diagnostics_v21.csv:evaluation_intercept,True,
+clean numeric calibration_diagnostics_v21.csv:evaluation_intercept_p,True,
+clean numeric calibration_diagnostics_v21.csv:evaluation_slope,True,
+clean numeric calibration_diagnostics_v21.csv:evaluation_slope_p,True,
+clean numeric calibration_diagnostics_v21.csv:zero_forecast_count,True,
+clean run produced common_origin_results.csv,True,
+clean shape common_origin_results.csv,True,"(21, 13) vs (21, 13)"
+clean numeric common_origin_results.csv:horizon,True,
+clean text common_origin_results.csv:spec,True,
+clean text common_origin_results.csv:target_type,True,
+clean text common_origin_results.csv:model,True,
+clean numeric common_origin_results.csv:n,True,
+clean text common_origin_results.csv:start,True,
+clean text common_origin_results.csv:end,True,
+clean numeric common_origin_results.csv:oos_r2,True,
+clean numeric common_origin_results.csv:rmse,True,
+clean numeric common_origin_results.csv:mae,True,
+clean numeric common_origin_results.csv:mean_realized,True,
+clean numeric common_origin_results.csv:mean_forecast,True,
+clean text common_origin_results.csv:sample,True,
+clean run produced data_checks.csv,True,
+clean shape data_checks.csv,True,"(14, 3) vs (14, 3)"
+clean text data_checks.csv:check,True,
+clean text data_checks.csv:value,True,
+clean numeric data_checks.csv:pass,True,
+clean run produced drag_materiality.csv,True,
+clean shape drag_materiality.csv,True,"(12, 8) vs (12, 8)"
+clean text drag_materiality.csv:fund,True,
+clean numeric drag_materiality.csv:horizon,True,
+clean numeric drag_materiality.csv:n,True,
+clean numeric drag_materiality.csv:mean_drag_pct,True,
+clean numeric drag_materiality.csv:median_drag_pct,True,
+clean numeric drag_materiality.csv:mean_abs_drag_pct,True,
+clean numeric drag_materiality.csv:p90_abs_drag_pct,True,
+clean numeric drag_materiality.csv:p95_abs_drag_pct,True,
+clean run produced forecast_encompassing.csv,True,
+clean shape forecast_encompassing.csv,True,"(6, 10) vs (6, 10)"
+clean numeric forecast_encompassing.csv:horizon,True,
+clean text forecast_encompassing.csv:option_model,True,
+clean numeric forecast_encompassing.csv:n,True,
+clean numeric forecast_encompassing.csv:alpha,True,
+clean numeric forecast_encompassing.csv:p_alpha,True,
+clean numeric forecast_encompassing.csv:beta_physical,True,
+clean numeric forecast_encompassing.csv:p_physical,True,
+clean numeric forecast_encompassing.csv:beta_option,True,
+clean numeric forecast_encompassing.csv:p_option,True,
+clean numeric forecast_encompassing.csv:r2,True,
+clean run produced fund_decomposition.csv,True,
+clean shape fund_decomposition.csv,True,"(12, 15) vs (12, 15)"
+clean text fund_decomposition.csv:fund,True,
+clean numeric fund_decomposition.csv:horizon,True,
+clean numeric fund_decomposition.csv:n,True,
+clean numeric fund_decomposition.csv:beta,True,
+clean numeric fund_decomposition.csv:gamma,True,
+clean numeric fund_decomposition.csv:estimated_rv_slope,True,
+clean numeric fund_decomposition.csv:estimated_rv_slope_se,True,
+clean numeric fund_decomposition.csv:slope_minus_theory,True,
+clean numeric fund_decomposition.csv:slope_theory_wald_t,True,
+clean numeric fund_decomposition.csv:mapping_r2,True,
+clean numeric fund_decomposition.csv:corr_drag_theory,True,
+clean numeric fund_decomposition.csv:sd_theory,True,
+clean numeric fund_decomposition.csv:sd_residual,True,
+clean numeric fund_decomposition.csv:signal_noise_ratio,True,
+clean numeric fund_decomposition.csv:variance_share_ratio,True,
+clean run produced fund_forecast_tests.csv,True,
+clean shape fund_forecast_tests.csv,True,"(72, 9) vs (72, 9)"
+clean text fund_forecast_tests.csv:fund,True,
+clean numeric fund_forecast_tests.csv:horizon,True,
+clean text fund_forecast_tests.csv:mapping,True,
+clean text fund_forecast_tests.csv:model_a,True,
+clean text fund_forecast_tests.csv:model_b,True,
+clean numeric fund_forecast_tests.csv:n,True,
+clean numeric fund_forecast_tests.csv:mean_loss_gain,True,
+clean numeric fund_forecast_tests.csv:hac_t,True,
+clean numeric fund_forecast_tests.csv:hac_p,True,
+clean run produced fund_forecasts_SDS_22d.csv,True,
+clean shape fund_forecasts_SDS_22d.csv,True,"(3164, 23) vs (3164, 23)"
+clean text fund_forecasts_SDS_22d.csv:Date,True,
+clean text fund_forecasts_SDS_22d.csv:fund,True,
+clean numeric fund_forecasts_SDS_22d.csv:horizon,True,
+clean numeric fund_forecasts_SDS_22d.csv:position,True,
+clean text fund_forecasts_SDS_22d.csv:target_end,True,
+clean numeric fund_forecasts_SDS_22d.csv:beta,True,
+clean numeric fund_forecasts_SDS_22d.csv:gamma,True,
+clean numeric fund_forecasts_SDS_22d.csv:realized_drag,True,
+clean numeric fund_forecasts_SDS_22d.csv:realized_variance,True,
+clean numeric fund_forecasts_SDS_22d.csv:historical_mean,True,
+clean numeric fund_forecasts_SDS_22d.csv:c_intercept,True,
+clean numeric fund_forecasts_SDS_22d.csv:c_rate,True,
+clean numeric fund_forecasts_SDS_22d.csv:rate_slope,True,
+clean numeric fund_forecasts_SDS_22d.csv:forecast_q_raw,True,
+clean numeric fund_forecasts_SDS_22d.csv:forecast_q_raw_rate,True,
+clean numeric fund_forecasts_SDS_22d.csv:forecast_q_mz,True,
+clean numeric fund_forecasts_SDS_22d.csv:forecast_q_mz_rate,True,
+clean numeric fund_forecasts_SDS_22d.csv:forecast_har4,True,
+clean numeric fund_forecasts_SDS_22d.csv:forecast_har4_rate,True,
+clean numeric fund_forecasts_SDS_22d.csv:forecast_harq,True,
+clean numeric fund_forecasts_SDS_22d.csv:forecast_harq_rate,True,
+clean numeric fund_forecasts_SDS_22d.csv:forecast_harqts,True,
+clean numeric fund_forecasts_SDS_22d.csv:forecast_harqts_rate,True,
+clean run produced fund_forecasts_SDS_5d.csv,True,
+clean shape fund_forecasts_SDS_5d.csv,True,"(3198, 23) vs (3198, 23)"
+clean text fund_forecasts_SDS_5d.csv:Date,True,
+clean text fund_forecasts_SDS_5d.csv:fund,True,
+clean numeric fund_forecasts_SDS_5d.csv:horizon,True,
+clean numeric fund_forecasts_SDS_5d.csv:position,True,
+clean text fund_forecasts_SDS_5d.csv:target_end,True,
+clean numeric fund_forecasts_SDS_5d.csv:beta,True,
+clean numeric fund_forecasts_SDS_5d.csv:gamma,True,
+clean numeric fund_forecasts_SDS_5d.csv:realized_drag,True,
+clean numeric fund_forecasts_SDS_5d.csv:realized_variance,True,
+clean numeric fund_forecasts_SDS_5d.csv:historical_mean,True,
+clean numeric fund_forecasts_SDS_5d.csv:c_intercept,True,
+clean numeric fund_forecasts_SDS_5d.csv:c_rate,True,
+clean numeric fund_forecasts_SDS_5d.csv:rate_slope,True,
+clean numeric fund_forecasts_SDS_5d.csv:forecast_q_raw,True,
+clean numeric fund_forecasts_SDS_5d.csv:forecast_q_raw_rate,True,
+clean numeric fund_forecasts_SDS_5d.csv:forecast_q_mz,True,
+clean numeric fund_forecasts_SDS_5d.csv:forecast_q_mz_rate,True,
+clean numeric fund_forecasts_SDS_5d.csv:forecast_har4,True,
+clean numeric fund_forecasts_SDS_5d.csv:forecast_har4_rate,True,
+clean numeric fund_forecasts_SDS_5d.csv:forecast_harq,True,
+clean numeric fund_forecasts_SDS_5d.csv:forecast_harq_rate,True,
+clean numeric fund_forecasts_SDS_5d.csv:forecast_harqts,True,
+clean numeric fund_forecasts_SDS_5d.csv:forecast_harqts_rate,True,
+clean run produced fund_forecasts_SDS_66d.csv,True,
+clean shape fund_forecasts_SDS_66d.csv,True,"(3076, 23) vs (3076, 23)"
+clean text fund_forecasts_SDS_66d.csv:Date,True,
+clean text fund_forecasts_SDS_66d.csv:fund,True,
+clean numeric fund_forecasts_SDS_66d.csv:horizon,True,
+clean numeric fund_forecasts_SDS_66d.csv:position,True,
+clean text fund_forecasts_SDS_66d.csv:target_end,True,
+clean numeric fund_forecasts_SDS_66d.csv:beta,True,
+clean numeric fund_forecasts_SDS_66d.csv:gamma,True,
+clean numeric fund_forecasts_SDS_66d.csv:realized_drag,True,
+clean numeric fund_forecasts_SDS_66d.csv:realized_variance,True,
+clean numeric fund_forecasts_SDS_66d.csv:historical_mean,True,
+clean numeric fund_forecasts_SDS_66d.csv:c_intercept,True,
+clean numeric fund_forecasts_SDS_66d.csv:c_rate,True,
+clean numeric fund_forecasts_SDS_66d.csv:rate_slope,True,
+clean numeric fund_forecasts_SDS_66d.csv:forecast_q_raw,True,
+clean numeric fund_forecasts_SDS_66d.csv:forecast_q_raw_rate,True,
+clean numeric fund_forecasts_SDS_66d.csv:forecast_q_mz,True,
+clean numeric fund_forecasts_SDS_66d.csv:forecast_q_mz_rate,True,
+clean numeric fund_forecasts_SDS_66d.csv:forecast_har4,True,
+clean numeric fund_forecasts_SDS_66d.csv:forecast_har4_rate,True,
+clean numeric fund_forecasts_SDS_66d.csv:forecast_harq,True,
+clean numeric fund_forecasts_SDS_66d.csv:forecast_harq_rate,True,
+clean numeric fund_forecasts_SDS_66d.csv:forecast_harqts,True,
+clean numeric fund_forecasts_SDS_66d.csv:forecast_harqts_rate,True,
+clean run produced fund_forecasts_SPXU_22d.csv,True,
+clean shape fund_forecasts_SPXU_22d.csv,True,"(3164, 23) vs (3164, 23)"
+clean text fund_forecasts_SPXU_22d.csv:Date,True,
+clean text fund_forecasts_SPXU_22d.csv:fund,True,
+clean numeric fund_forecasts_SPXU_22d.csv:horizon,True,
+clean numeric fund_forecasts_SPXU_22d.csv:position,True,
+clean text fund_forecasts_SPXU_22d.csv:target_end,True,
+clean numeric fund_forecasts_SPXU_22d.csv:beta,True,
+clean numeric fund_forecasts_SPXU_22d.csv:gamma,True,
+clean numeric fund_forecasts_SPXU_22d.csv:realized_drag,True,
+clean numeric fund_forecasts_SPXU_22d.csv:realized_variance,True,
+clean numeric fund_forecasts_SPXU_22d.csv:historical_mean,True,
+clean numeric fund_forecasts_SPXU_22d.csv:c_intercept,True,
+clean numeric fund_forecasts_SPXU_22d.csv:c_rate,True,
+clean numeric fund_forecasts_SPXU_22d.csv:rate_slope,True,
+clean numeric fund_forecasts_SPXU_22d.csv:forecast_q_raw,True,
+clean numeric fund_forecasts_SPXU_22d.csv:forecast_q_raw_rate,True,
+clean numeric fund_forecasts_SPXU_22d.csv:forecast_q_mz,True,
+clean numeric fund_forecasts_SPXU_22d.csv:forecast_q_mz_rate,True,
+clean numeric fund_forecasts_SPXU_22d.csv:forecast_har4,True,
+clean numeric fund_forecasts_SPXU_22d.csv:forecast_har4_rate,True,
+clean numeric fund_forecasts_SPXU_22d.csv:forecast_harq,True,
+clean numeric fund_forecasts_SPXU_22d.csv:forecast_harq_rate,True,
+clean numeric fund_forecasts_SPXU_22d.csv:forecast_harqts,True,
+clean numeric fund_forecasts_SPXU_22d.csv:forecast_harqts_rate,True,
+clean run produced fund_forecasts_SPXU_5d.csv,True,
+clean shape fund_forecasts_SPXU_5d.csv,True,"(3198, 23) vs (3198, 23)"
+clean text fund_forecasts_SPXU_5d.csv:Date,True,
+clean text fund_forecasts_SPXU_5d.csv:fund,True,
+clean numeric fund_forecasts_SPXU_5d.csv:horizon,True,
+clean numeric fund_forecasts_SPXU_5d.csv:position,True,
+clean text fund_forecasts_SPXU_5d.csv:target_end,True,
+clean numeric fund_forecasts_SPXU_5d.csv:beta,True,
+clean numeric fund_forecasts_SPXU_5d.csv:gamma,True,
+clean numeric fund_forecasts_SPXU_5d.csv:realized_drag,True,
+clean numeric fund_forecasts_SPXU_5d.csv:realized_variance,True,
+clean numeric fund_forecasts_SPXU_5d.csv:historical_mean,True,
+clean numeric fund_forecasts_SPXU_5d.csv:c_intercept,True,
+clean numeric fund_forecasts_SPXU_5d.csv:c_rate,True,
+clean numeric fund_forecasts_SPXU_5d.csv:rate_slope,True,
+clean numeric fund_forecasts_SPXU_5d.csv:forecast_q_raw,True,
+clean numeric fund_forecasts_SPXU_5d.csv:forecast_q_raw_rate,True,
+clean numeric fund_forecasts_SPXU_5d.csv:forecast_q_mz,True,
+clean numeric fund_forecasts_SPXU_5d.csv:forecast_q_mz_rate,True,
+clean numeric fund_forecasts_SPXU_5d.csv:forecast_har4,True,
+clean numeric fund_forecasts_SPXU_5d.csv:forecast_har4_rate,True,
+clean numeric fund_forecasts_SPXU_5d.csv:forecast_harq,True,
+clean numeric fund_forecasts_SPXU_5d.csv:forecast_harq_rate,True,
+clean numeric fund_forecasts_SPXU_5d.csv:forecast_harqts,True,
+clean numeric fund_forecasts_SPXU_5d.csv:forecast_harqts_rate,True,
+clean run produced fund_forecasts_SPXU_66d.csv,True,
+clean shape fund_forecasts_SPXU_66d.csv,True,"(3076, 23) vs (3076, 23)"
+clean text fund_forecasts_SPXU_66d.csv:Date,True,
+clean text fund_forecasts_SPXU_66d.csv:fund,True,
+clean numeric fund_forecasts_SPXU_66d.csv:horizon,True,
+clean numeric fund_forecasts_SPXU_66d.csv:position,True,
+clean text fund_forecasts_SPXU_66d.csv:target_end,True,
+clean numeric fund_forecasts_SPXU_66d.csv:beta,True,
+clean numeric fund_forecasts_SPXU_66d.csv:gamma,True,
+clean numeric fund_forecasts_SPXU_66d.csv:realized_drag,True,
+clean numeric fund_forecasts_SPXU_66d.csv:realized_variance,True,
+clean numeric fund_forecasts_SPXU_66d.csv:historical_mean,True,
+clean numeric fund_forecasts_SPXU_66d.csv:c_intercept,True,
+clean numeric fund_forecasts_SPXU_66d.csv:c_rate,True,
+clean numeric fund_forecasts_SPXU_66d.csv:rate_slope,True,
+clean numeric fund_forecasts_SPXU_66d.csv:forecast_q_raw,True,
+clean numeric fund_forecasts_SPXU_66d.csv:forecast_q_raw_rate,True,
+clean numeric fund_forecasts_SPXU_66d.csv:forecast_q_mz,True,
+clean numeric fund_forecasts_SPXU_66d.csv:forecast_q_mz_rate,True,
+clean numeric fund_forecasts_SPXU_66d.csv:forecast_har4,True,
+clean numeric fund_forecasts_SPXU_66d.csv:forecast_har4_rate,True,
+clean numeric fund_forecasts_SPXU_66d.csv:forecast_harq,True,
+clean numeric fund_forecasts_SPXU_66d.csv:forecast_harq_rate,True,
+clean numeric fund_forecasts_SPXU_66d.csv:forecast_harqts,True,
+clean numeric fund_forecasts_SPXU_66d.csv:forecast_harqts_rate,True,
+clean run produced fund_forecasts_SSO_22d.csv,True,
+clean shape fund_forecasts_SSO_22d.csv,True,"(3164, 23) vs (3164, 23)"
+clean text fund_forecasts_SSO_22d.csv:Date,True,
+clean text fund_forecasts_SSO_22d.csv:fund,True,
+clean numeric fund_forecasts_SSO_22d.csv:horizon,True,
+clean numeric fund_forecasts_SSO_22d.csv:position,True,
+clean text fund_forecasts_SSO_22d.csv:target_end,True,
+clean numeric fund_forecasts_SSO_22d.csv:beta,True,
+clean numeric fund_forecasts_SSO_22d.csv:gamma,True,
+clean numeric fund_forecasts_SSO_22d.csv:realized_drag,True,
+clean numeric fund_forecasts_SSO_22d.csv:realized_variance,True,
+clean numeric fund_forecasts_SSO_22d.csv:historical_mean,True,
+clean numeric fund_forecasts_SSO_22d.csv:c_intercept,True,
+clean numeric fund_forecasts_SSO_22d.csv:c_rate,True,
+clean numeric fund_forecasts_SSO_22d.csv:rate_slope,True,
+clean numeric fund_forecasts_SSO_22d.csv:forecast_q_raw,True,
+clean numeric fund_forecasts_SSO_22d.csv:forecast_q_raw_rate,True,
+clean numeric fund_forecasts_SSO_22d.csv:forecast_q_mz,True,
+clean numeric fund_forecasts_SSO_22d.csv:forecast_q_mz_rate,True,
+clean numeric fund_forecasts_SSO_22d.csv:forecast_har4,True,
+clean numeric fund_forecasts_SSO_22d.csv:forecast_har4_rate,True,
+clean numeric fund_forecasts_SSO_22d.csv:forecast_harq,True,
+clean numeric fund_forecasts_SSO_22d.csv:forecast_harq_rate,True,
+clean numeric fund_forecasts_SSO_22d.csv:forecast_harqts,True,
+clean numeric fund_forecasts_SSO_22d.csv:forecast_harqts_rate,True,
+clean run produced fund_forecasts_SSO_5d.csv,True,
+clean shape fund_forecasts_SSO_5d.csv,True,"(3198, 23) vs (3198, 23)"
+clean text fund_forecasts_SSO_5d.csv:Date,True,
+clean text fund_forecasts_SSO_5d.csv:fund,True,
+clean numeric fund_forecasts_SSO_5d.csv:horizon,True,
+clean numeric fund_forecasts_SSO_5d.csv:position,True,
+clean text fund_forecasts_SSO_5d.csv:target_end,True,
+clean numeric fund_forecasts_SSO_5d.csv:beta,True,
+clean numeric fund_forecasts_SSO_5d.csv:gamma,True,
+clean numeric fund_forecasts_SSO_5d.csv:realized_drag,True,
+clean numeric fund_forecasts_SSO_5d.csv:realized_variance,True,
+clean numeric fund_forecasts_SSO_5d.csv:historical_mean,True,
+clean numeric fund_forecasts_SSO_5d.csv:c_intercept,True,
+clean numeric fund_forecasts_SSO_5d.csv:c_rate,True,
+clean numeric fund_forecasts_SSO_5d.csv:rate_slope,True,
+clean numeric fund_forecasts_SSO_5d.csv:forecast_q_raw,True,
+clean numeric fund_forecasts_SSO_5d.csv:forecast_q_raw_rate,True,
+clean numeric fund_forecasts_SSO_5d.csv:forecast_q_mz,True,
+clean numeric fund_forecasts_SSO_5d.csv:forecast_q_mz_rate,True,
+clean numeric fund_forecasts_SSO_5d.csv:forecast_har4,True,
+clean numeric fund_forecasts_SSO_5d.csv:forecast_har4_rate,True,
+clean numeric fund_forecasts_SSO_5d.csv:forecast_harq,True,
+clean numeric fund_forecasts_SSO_5d.csv:forecast_harq_rate,True,
+clean numeric fund_forecasts_SSO_5d.csv:forecast_harqts,True,
+clean numeric fund_forecasts_SSO_5d.csv:forecast_harqts_rate,True,
+clean run produced fund_forecasts_SSO_66d.csv,True,
+clean shape fund_forecasts_SSO_66d.csv,True,"(3076, 23) vs (3076, 23)"
+clean text fund_forecasts_SSO_66d.csv:Date,True,
+clean text fund_forecasts_SSO_66d.csv:fund,True,
+clean numeric fund_forecasts_SSO_66d.csv:horizon,True,
+clean numeric fund_forecasts_SSO_66d.csv:position,True,
+clean text fund_forecasts_SSO_66d.csv:target_end,True,
+clean numeric fund_forecasts_SSO_66d.csv:beta,True,
+clean numeric fund_forecasts_SSO_66d.csv:gamma,True,
+clean numeric fund_forecasts_SSO_66d.csv:realized_drag,True,
+clean numeric fund_forecasts_SSO_66d.csv:realized_variance,True,
+clean numeric fund_forecasts_SSO_66d.csv:historical_mean,True,
+clean numeric fund_forecasts_SSO_66d.csv:c_intercept,True,
+clean numeric fund_forecasts_SSO_66d.csv:c_rate,True,
+clean numeric fund_forecasts_SSO_66d.csv:rate_slope,True,
+clean numeric fund_forecasts_SSO_66d.csv:forecast_q_raw,True,
+clean numeric fund_forecasts_SSO_66d.csv:forecast_q_raw_rate,True,
+clean numeric fund_forecasts_SSO_66d.csv:forecast_q_mz,True,
+clean numeric fund_forecasts_SSO_66d.csv:forecast_q_mz_rate,True,
+clean numeric fund_forecasts_SSO_66d.csv:forecast_har4,True,
+clean numeric fund_forecasts_SSO_66d.csv:forecast_har4_rate,True,
+clean numeric fund_forecasts_SSO_66d.csv:forecast_harq,True,
+clean numeric fund_forecasts_SSO_66d.csv:forecast_harq_rate,True,
+clean numeric fund_forecasts_SSO_66d.csv:forecast_harqts,True,
+clean numeric fund_forecasts_SSO_66d.csv:forecast_harqts_rate,True,
+clean run produced fund_forecasts_UPRO_22d.csv,True,
+clean shape fund_forecasts_UPRO_22d.csv,True,"(3164, 23) vs (3164, 23)"
+clean text fund_forecasts_UPRO_22d.csv:Date,True,
+clean text fund_forecasts_UPRO_22d.csv:fund,True,
+clean numeric fund_forecasts_UPRO_22d.csv:horizon,True,
+clean numeric fund_forecasts_UPRO_22d.csv:position,True,
+clean text fund_forecasts_UPRO_22d.csv:target_end,True,
+clean numeric fund_forecasts_UPRO_22d.csv:beta,True,
+clean numeric fund_forecasts_UPRO_22d.csv:gamma,True,
+clean numeric fund_forecasts_UPRO_22d.csv:realized_drag,True,
+clean numeric fund_forecasts_UPRO_22d.csv:realized_variance,True,
+clean numeric fund_forecasts_UPRO_22d.csv:historical_mean,True,
+clean numeric fund_forecasts_UPRO_22d.csv:c_intercept,True,
+clean numeric fund_forecasts_UPRO_22d.csv:c_rate,True,
+clean numeric fund_forecasts_UPRO_22d.csv:rate_slope,True,
+clean numeric fund_forecasts_UPRO_22d.csv:forecast_q_raw,True,
+clean numeric fund_forecasts_UPRO_22d.csv:forecast_q_raw_rate,True,
+clean numeric fund_forecasts_UPRO_22d.csv:forecast_q_mz,True,
+clean numeric fund_forecasts_UPRO_22d.csv:forecast_q_mz_rate,True,
+clean numeric fund_forecasts_UPRO_22d.csv:forecast_har4,True,
+clean numeric fund_forecasts_UPRO_22d.csv:forecast_har4_rate,True,
+clean numeric fund_forecasts_UPRO_22d.csv:forecast_harq,True,
+clean numeric fund_forecasts_UPRO_22d.csv:forecast_harq_rate,True,
+clean numeric fund_forecasts_UPRO_22d.csv:forecast_harqts,True,
+clean numeric fund_forecasts_UPRO_22d.csv:forecast_harqts_rate,True,
+clean run produced fund_forecasts_UPRO_5d.csv,True,
+clean shape fund_forecasts_UPRO_5d.csv,True,"(3198, 23) vs (3198, 23)"
+clean text fund_forecasts_UPRO_5d.csv:Date,True,
+clean text fund_forecasts_UPRO_5d.csv:fund,True,
+clean numeric fund_forecasts_UPRO_5d.csv:horizon,True,
+clean numeric fund_forecasts_UPRO_5d.csv:position,True,
+clean text fund_forecasts_UPRO_5d.csv:target_end,True,
+clean numeric fund_forecasts_UPRO_5d.csv:beta,True,
+clean numeric fund_forecasts_UPRO_5d.csv:gamma,True,
+clean numeric fund_forecasts_UPRO_5d.csv:realized_drag,True,
+clean numeric fund_forecasts_UPRO_5d.csv:realized_variance,True,
+clean numeric fund_forecasts_UPRO_5d.csv:historical_mean,True,
+clean numeric fund_forecasts_UPRO_5d.csv:c_intercept,True,
+clean numeric fund_forecasts_UPRO_5d.csv:c_rate,True,
+clean numeric fund_forecasts_UPRO_5d.csv:rate_slope,True,
+clean numeric fund_forecasts_UPRO_5d.csv:forecast_q_raw,True,
+clean numeric fund_forecasts_UPRO_5d.csv:forecast_q_raw_rate,True,
+clean numeric fund_forecasts_UPRO_5d.csv:forecast_q_mz,True,
+clean numeric fund_forecasts_UPRO_5d.csv:forecast_q_mz_rate,True,
+clean numeric fund_forecasts_UPRO_5d.csv:forecast_har4,True,
+clean numeric fund_forecasts_UPRO_5d.csv:forecast_har4_rate,True,
+clean numeric fund_forecasts_UPRO_5d.csv:forecast_harq,True,
+clean numeric fund_forecasts_UPRO_5d.csv:forecast_harq_rate,True,
+clean numeric fund_forecasts_UPRO_5d.csv:forecast_harqts,True,
+clean numeric fund_forecasts_UPRO_5d.csv:forecast_harqts_rate,True,
+clean run produced fund_forecasts_UPRO_66d.csv,True,
+clean shape fund_forecasts_UPRO_66d.csv,True,"(3076, 23) vs (3076, 23)"
+clean text fund_forecasts_UPRO_66d.csv:Date,True,
+clean text fund_forecasts_UPRO_66d.csv:fund,True,
+clean numeric fund_forecasts_UPRO_66d.csv:horizon,True,
+clean numeric fund_forecasts_UPRO_66d.csv:position,True,
+clean text fund_forecasts_UPRO_66d.csv:target_end,True,
+clean numeric fund_forecasts_UPRO_66d.csv:beta,True,
+clean numeric fund_forecasts_UPRO_66d.csv:gamma,True,
+clean numeric fund_forecasts_UPRO_66d.csv:realized_drag,True,
+clean numeric fund_forecasts_UPRO_66d.csv:realized_variance,True,
+clean numeric fund_forecasts_UPRO_66d.csv:historical_mean,True,
+clean numeric fund_forecasts_UPRO_66d.csv:c_intercept,True,
+clean numeric fund_forecasts_UPRO_66d.csv:c_rate,True,
+clean numeric fund_forecasts_UPRO_66d.csv:rate_slope,True,
+clean numeric fund_forecasts_UPRO_66d.csv:forecast_q_raw,True,
+clean numeric fund_forecasts_UPRO_66d.csv:forecast_q_raw_rate,True,
+clean numeric fund_forecasts_UPRO_66d.csv:forecast_q_mz,True,
+clean numeric fund_forecasts_UPRO_66d.csv:forecast_q_mz_rate,True,
+clean numeric fund_forecasts_UPRO_66d.csv:forecast_har4,True,
+clean numeric fund_forecasts_UPRO_66d.csv:forecast_har4_rate,True,
+clean numeric fund_forecasts_UPRO_66d.csv:forecast_harq,True,
+clean numeric fund_forecasts_UPRO_66d.csv:forecast_harq_rate,True,
+clean numeric fund_forecasts_UPRO_66d.csv:forecast_harqts,True,
+clean numeric fund_forecasts_UPRO_66d.csv:forecast_harqts_rate,True,
+clean run produced fund_model_results.csv,True,
+clean shape fund_model_results.csv,True,"(120, 8) vs (120, 8)"
+clean text fund_model_results.csv:fund,True,
+clean numeric fund_model_results.csv:horizon,True,
+clean text fund_model_results.csv:model,True,
+clean text fund_model_results.csv:mapping,True,
+clean numeric fund_model_results.csv:n,True,
+clean numeric fund_model_results.csv:oos_r2,True,
+clean numeric fund_model_results.csv:rmse,True,
+clean numeric fund_model_results.csv:mae,True,
+clean run produced fund_panel_tests.csv,True,
+clean shape fund_panel_tests.csv,True,"(9, 9) vs (9, 9)"
+clean numeric fund_panel_tests.csv:horizon,True,
+clean text fund_panel_tests.csv:model_a,True,
+clean text fund_panel_tests.csv:model_b,True,
+clean numeric fund_panel_tests.csv:n_dates,True,
+clean numeric fund_panel_tests.csv:mean_normalized_loss_gain,True,
+clean numeric fund_panel_tests.csv:hac_t,True,
+clean numeric fund_panel_tests.csv:hac_p,True,
+clean numeric fund_panel_tests.csv:block_p,True,
+clean numeric fund_panel_tests.csv:mean_pairwise_correlation,True,
+clean run produced idealized_scale_invariance_v21.csv,True,
+clean shape idealized_scale_invariance_v21.csv,True,"(48, 7) vs (48, 7)"
+clean numeric idealized_scale_invariance_v21.csv:horizon,True,
+clean text idealized_scale_invariance_v21.csv:fund,True,
+clean numeric idealized_scale_invariance_v21.csv:gamma,True,
+clean text idealized_scale_invariance_v21.csv:model,True,
+clean numeric idealized_scale_invariance_v21.csv:underlying_variance_oos_r2,True,
+clean numeric idealized_scale_invariance_v21.csv:idealized_drag_oos_r2,True,
+clean numeric idealized_scale_invariance_v21.csv:absolute_difference,True,
+clean run produced inference_sensitivity_v21.csv,True,
+clean shape inference_sensitivity_v21.csv,True,"(48, 10) vs (48, 10)"
+clean numeric inference_sensitivity_v21.csv:horizon,True,
+clean text inference_sensitivity_v21.csv:comparison,True,
+clean text inference_sensitivity_v21.csv:model_a,True,
+clean text inference_sensitivity_v21.csv:model_b,True,
+clean text inference_sensitivity_v21.csv:method,True,
+clean numeric inference_sensitivity_v21.csv:parameter,True,
+clean numeric inference_sensitivity_v21.csv:n,True,
+clean numeric inference_sensitivity_v21.csv:mean_loss_gain_a_over_b,True,
+clean numeric inference_sensitivity_v21.csv:statistic,True,
+clean numeric inference_sensitivity_v21.csv:p_value,True,
+clean run produced nonoverlap_results.csv,True,
+clean shape nonoverlap_results.csv,True,"(93, 12) vs (93, 12)"
+clean numeric nonoverlap_results.csv:horizon,True,
+clean numeric nonoverlap_results.csv:offset,True,
+clean numeric nonoverlap_results.csv:n,True,
+clean numeric nonoverlap_results.csv:r2_mean,True,
+clean numeric nonoverlap_results.csv:r2_q_raw,True,
+clean numeric nonoverlap_results.csv:r2_q_mz,True,
+clean numeric nonoverlap_results.csv:r2_har3,True,
+clean numeric nonoverlap_results.csv:r2_har4,True,
+clean numeric nonoverlap_results.csv:r2_harq,True,
+clean numeric nonoverlap_results.csv:r2_harqts,True,
+clean numeric nonoverlap_results.csv:delta_qmz_qraw,True,
+clean numeric nonoverlap_results.csv:delta_harqts_har4,True,
+clean run produced recursive_coefficients.csv,True,
+clean shape recursive_coefficients.csv,True,"(19074, 12) vs (19074, 12)"
+clean text recursive_coefficients.csv:Date,True,
+clean numeric recursive_coefficients.csv:horizon,True,
+clean text recursive_coefficients.csv:spec,True,
+clean text recursive_coefficients.csv:model,True,
+clean numeric recursive_coefficients.csv:n_train,True,
+clean numeric recursive_coefficients.csv:coef_0,True,
+clean numeric recursive_coefficients.csv:coef_1,True,
+clean numeric recursive_coefficients.csv:coef_2,True,
+clean numeric recursive_coefficients.csv:coef_3,True,
+clean numeric recursive_coefficients.csv:coef_4,True,
+clean numeric recursive_coefficients.csv:coef_5,True,
+clean numeric recursive_coefficients.csv:coef_6,True,
+clean run produced regime_results_66d.csv,True,
+clean shape regime_results_66d.csv,True,"(11, 18) vs (11, 18)"
+clean numeric regime_results_66d.csv:horizon,True,
+clean text regime_results_66d.csv:subset,True,
+clean numeric regime_results_66d.csv:n,True,
+clean text regime_results_66d.csv:start,True,
+clean text regime_results_66d.csv:end,True,
+clean numeric regime_results_66d.csv:r2_mean,True,
+clean numeric regime_results_66d.csv:r2_q_raw,True,
+clean numeric regime_results_66d.csv:r2_q_mz,True,
+clean numeric regime_results_66d.csv:r2_har3,True,
+clean numeric regime_results_66d.csv:r2_har4,True,
+clean numeric regime_results_66d.csv:r2_harq,True,
+clean numeric regime_results_66d.csv:r2_harqts,True,
+clean numeric regime_results_66d.csv:q_mz_vs_q_raw_t,True,
+clean numeric regime_results_66d.csv:q_mz_vs_q_raw_p,True,
+clean numeric regime_results_66d.csv:q_mz_vs_har4_t,True,
+clean numeric regime_results_66d.csv:q_mz_vs_har4_p,True,
+clean numeric regime_results_66d.csv:harqts_vs_har4_t,True,
+clean numeric regime_results_66d.csv:harqts_vs_har4_p,True,
+clean run produced robustness_model_results.csv,True,
+clean shape robustness_model_results.csv,True,"(91, 13) vs (91, 13)"
+clean numeric robustness_model_results.csv:horizon,True,
+clean text robustness_model_results.csv:spec,True,
+clean text robustness_model_results.csv:target_type,True,
+clean text robustness_model_results.csv:model,True,
+clean numeric robustness_model_results.csv:n,True,
+clean text robustness_model_results.csv:start,True,
+clean text robustness_model_results.csv:end,True,
+clean numeric robustness_model_results.csv:oos_r2,True,
+clean numeric robustness_model_results.csv:rmse,True,
+clean numeric robustness_model_results.csv:mae,True,
+clean numeric robustness_model_results.csv:mean_realized,True,
+clean numeric robustness_model_results.csv:mean_forecast,True,
+clean text robustness_model_results.csv:robustness,True,
+clean run produced rolling_loss_66d.csv,True,
+clean shape rolling_loss_66d.csv,True,"(3076, 4) vs (3076, 4)"
+clean text rolling_loss_66d.csv:Date,True,
+clean numeric rolling_loss_66d.csv:qmz_vs_qraw,True,
+clean numeric rolling_loss_66d.csv:qmz_vs_har4,True,
+clean numeric rolling_loss_66d.csv:harqts_vs_har4,True,
+clean run produced variance_forecast_tests.csv,True,
+clean shape variance_forecast_tests.csv,True,"(18, 12) vs (18, 12)"
+clean numeric variance_forecast_tests.csv:horizon,True,
+clean text variance_forecast_tests.csv:spec,True,
+clean text variance_forecast_tests.csv:model_a,True,
+clean text variance_forecast_tests.csv:model_b,True,
+clean numeric variance_forecast_tests.csv:n,True,
+clean numeric variance_forecast_tests.csv:mean_loss_gain_a_over_b,True,
+clean numeric variance_forecast_tests.csv:hac_t,True,
+clean numeric variance_forecast_tests.csv:hac_p,True,
+clean numeric variance_forecast_tests.csv:block_p,True,
+clean numeric variance_forecast_tests.csv:cw_mean,True,
+clean numeric variance_forecast_tests.csv:cw_t,True,
+clean numeric variance_forecast_tests.csv:cw_p_one_sided,True,
+clean run produced variance_forecasts_22d.csv,True,
+clean shape variance_forecasts_22d.csv,True,"(3164, 20) vs (3164, 20)"
+clean text variance_forecasts_22d.csv:Date,True,
+clean numeric variance_forecasts_22d.csv:position,True,
+clean text variance_forecasts_22d.csv:target_end,True,
+clean text variance_forecasts_22d.csv:training_end,True,
+clean numeric variance_forecasts_22d.csv:horizon,True,
+clean text variance_forecasts_22d.csv:spec,True,
+clean text variance_forecasts_22d.csv:target_type,True,
+clean text variance_forecasts_22d.csv:option_signal,True,
+clean numeric variance_forecasts_22d.csv:n_train,True,
+clean numeric variance_forecasts_22d.csv:realized_variance,True,
+clean numeric variance_forecasts_22d.csv:vix,True,
+clean numeric variance_forecasts_22d.csv:vix3m,True,
+clean numeric variance_forecasts_22d.csv:term_variance,True,
+clean numeric variance_forecasts_22d.csv:forecast_mean,True,
+clean numeric variance_forecasts_22d.csv:forecast_q_raw,True,
+clean numeric variance_forecasts_22d.csv:forecast_q_mz,True,
+clean numeric variance_forecasts_22d.csv:forecast_har3,True,
+clean numeric variance_forecasts_22d.csv:forecast_har4,True,
+clean numeric variance_forecasts_22d.csv:forecast_harq,True,
+clean numeric variance_forecasts_22d.csv:forecast_harqts,True,
+clean run produced variance_forecasts_5d.csv,True,
+clean shape variance_forecasts_5d.csv,True,"(3198, 20) vs (3198, 20)"
+clean text variance_forecasts_5d.csv:Date,True,
+clean numeric variance_forecasts_5d.csv:position,True,
+clean text variance_forecasts_5d.csv:target_end,True,
+clean text variance_forecasts_5d.csv:training_end,True,
+clean numeric variance_forecasts_5d.csv:horizon,True,
+clean text variance_forecasts_5d.csv:spec,True,
+clean text variance_forecasts_5d.csv:target_type,True,
+clean text variance_forecasts_5d.csv:option_signal,True,
+clean numeric variance_forecasts_5d.csv:n_train,True,
+clean numeric variance_forecasts_5d.csv:realized_variance,True,
+clean numeric variance_forecasts_5d.csv:vix,True,
+clean numeric variance_forecasts_5d.csv:vix3m,True,
+clean numeric variance_forecasts_5d.csv:term_variance,True,
+clean numeric variance_forecasts_5d.csv:forecast_mean,True,
+clean numeric variance_forecasts_5d.csv:forecast_q_raw,True,
+clean numeric variance_forecasts_5d.csv:forecast_q_mz,True,
+clean numeric variance_forecasts_5d.csv:forecast_har3,True,
+clean numeric variance_forecasts_5d.csv:forecast_har4,True,
+clean numeric variance_forecasts_5d.csv:forecast_harq,True,
+clean numeric variance_forecasts_5d.csv:forecast_harqts,True,
+clean run produced variance_forecasts_66d.csv,True,
+clean shape variance_forecasts_66d.csv,True,"(3076, 20) vs (3076, 20)"
+clean text variance_forecasts_66d.csv:Date,True,
+clean numeric variance_forecasts_66d.csv:position,True,
+clean text variance_forecasts_66d.csv:target_end,True,
+clean text variance_forecasts_66d.csv:training_end,True,
+clean numeric variance_forecasts_66d.csv:horizon,True,
+clean text variance_forecasts_66d.csv:spec,True,
+clean text variance_forecasts_66d.csv:target_type,True,
+clean text variance_forecasts_66d.csv:option_signal,True,
+clean numeric variance_forecasts_66d.csv:n_train,True,
+clean numeric variance_forecasts_66d.csv:realized_variance,True,
+clean numeric variance_forecasts_66d.csv:vix,True,
+clean numeric variance_forecasts_66d.csv:vix3m,True,
+clean numeric variance_forecasts_66d.csv:term_variance,True,
+clean numeric variance_forecasts_66d.csv:forecast_mean,True,
+clean numeric variance_forecasts_66d.csv:forecast_q_raw,True,
+clean numeric variance_forecasts_66d.csv:forecast_q_mz,True,
+clean numeric variance_forecasts_66d.csv:forecast_har3,True,
+clean numeric variance_forecasts_66d.csv:forecast_har4,True,
+clean numeric variance_forecasts_66d.csv:forecast_harq,True,
+clean numeric variance_forecasts_66d.csv:forecast_harqts,True,
+clean run produced variance_forecasts_daily_bipower_22d.csv,True,
+clean shape variance_forecasts_daily_bipower_22d.csv,True,"(3163, 20) vs (3163, 20)"
+clean text variance_forecasts_daily_bipower_22d.csv:Date,True,
+clean numeric variance_forecasts_daily_bipower_22d.csv:position,True,
+clean text variance_forecasts_daily_bipower_22d.csv:target_end,True,
+clean text variance_forecasts_daily_bipower_22d.csv:training_end,True,
+clean numeric variance_forecasts_daily_bipower_22d.csv:horizon,True,
+clean text variance_forecasts_daily_bipower_22d.csv:spec,True,
+clean text variance_forecasts_daily_bipower_22d.csv:target_type,True,
+clean text variance_forecasts_daily_bipower_22d.csv:option_signal,True,
+clean numeric variance_forecasts_daily_bipower_22d.csv:n_train,True,
+clean numeric variance_forecasts_daily_bipower_22d.csv:realized_variance,True,
+clean numeric variance_forecasts_daily_bipower_22d.csv:vix,True,
+clean numeric variance_forecasts_daily_bipower_22d.csv:vix3m,True,
+clean numeric variance_forecasts_daily_bipower_22d.csv:term_variance,True,
+clean numeric variance_forecasts_daily_bipower_22d.csv:forecast_mean,True,
+clean numeric variance_forecasts_daily_bipower_22d.csv:forecast_q_raw,True,
+clean numeric variance_forecasts_daily_bipower_22d.csv:forecast_q_mz,True,
+clean numeric variance_forecasts_daily_bipower_22d.csv:forecast_har3,True,
+clean numeric variance_forecasts_daily_bipower_22d.csv:forecast_har4,True,
+clean numeric variance_forecasts_daily_bipower_22d.csv:forecast_harq,True,
+clean numeric variance_forecasts_daily_bipower_22d.csv:forecast_harqts,True,
+clean run produced variance_forecasts_daily_bipower_5d.csv,True,
+clean shape variance_forecasts_daily_bipower_5d.csv,True,"(3197, 20) vs (3197, 20)"
+clean text variance_forecasts_daily_bipower_5d.csv:Date,True,
+clean numeric variance_forecasts_daily_bipower_5d.csv:position,True,
+clean text variance_forecasts_daily_bipower_5d.csv:target_end,True,
+clean text variance_forecasts_daily_bipower_5d.csv:training_end,True,
+clean numeric variance_forecasts_daily_bipower_5d.csv:horizon,True,
+clean text variance_forecasts_daily_bipower_5d.csv:spec,True,
+clean text variance_forecasts_daily_bipower_5d.csv:target_type,True,
+clean text variance_forecasts_daily_bipower_5d.csv:option_signal,True,
+clean numeric variance_forecasts_daily_bipower_5d.csv:n_train,True,
+clean numeric variance_forecasts_daily_bipower_5d.csv:realized_variance,True,
+clean numeric variance_forecasts_daily_bipower_5d.csv:vix,True,
+clean numeric variance_forecasts_daily_bipower_5d.csv:vix3m,True,
+clean numeric variance_forecasts_daily_bipower_5d.csv:term_variance,True,
+clean numeric variance_forecasts_daily_bipower_5d.csv:forecast_mean,True,
+clean numeric variance_forecasts_daily_bipower_5d.csv:forecast_q_raw,True,
+clean numeric variance_forecasts_daily_bipower_5d.csv:forecast_q_mz,True,
+clean numeric variance_forecasts_daily_bipower_5d.csv:forecast_har3,True,
+clean numeric variance_forecasts_daily_bipower_5d.csv:forecast_har4,True,
+clean numeric variance_forecasts_daily_bipower_5d.csv:forecast_harq,True,
+clean numeric variance_forecasts_daily_bipower_5d.csv:forecast_harqts,True,
+clean run produced variance_forecasts_daily_bipower_66d.csv,True,
+clean shape variance_forecasts_daily_bipower_66d.csv,True,"(3075, 20) vs (3075, 20)"
+clean text variance_forecasts_daily_bipower_66d.csv:Date,True,
+clean numeric variance_forecasts_daily_bipower_66d.csv:position,True,
+clean text variance_forecasts_daily_bipower_66d.csv:target_end,True,
+clean text variance_forecasts_daily_bipower_66d.csv:training_end,True,
+clean numeric variance_forecasts_daily_bipower_66d.csv:horizon,True,
+clean text variance_forecasts_daily_bipower_66d.csv:spec,True,
+clean text variance_forecasts_daily_bipower_66d.csv:target_type,True,
+clean text variance_forecasts_daily_bipower_66d.csv:option_signal,True,
+clean numeric variance_forecasts_daily_bipower_66d.csv:n_train,True,
+clean numeric variance_forecasts_daily_bipower_66d.csv:realized_variance,True,
+clean numeric variance_forecasts_daily_bipower_66d.csv:vix,True,
+clean numeric variance_forecasts_daily_bipower_66d.csv:vix3m,True,
+clean numeric variance_forecasts_daily_bipower_66d.csv:term_variance,True,
+clean numeric variance_forecasts_daily_bipower_66d.csv:forecast_mean,True,
+clean numeric variance_forecasts_daily_bipower_66d.csv:forecast_q_raw,True,
+clean numeric variance_forecasts_daily_bipower_66d.csv:forecast_q_mz,True,
+clean numeric variance_forecasts_daily_bipower_66d.csv:forecast_har3,True,
+clean numeric variance_forecasts_daily_bipower_66d.csv:forecast_har4,True,
+clean numeric variance_forecasts_daily_bipower_66d.csv:forecast_harq,True,
+clean numeric variance_forecasts_daily_bipower_66d.csv:forecast_harqts,True,
+clean run produced variance_forecasts_lagged_one_day_66d.csv,True,
+clean shape variance_forecasts_lagged_one_day_66d.csv,True,"(3076, 20) vs (3076, 20)"
+clean text variance_forecasts_lagged_one_day_66d.csv:Date,True,
+clean numeric variance_forecasts_lagged_one_day_66d.csv:position,True,
+clean text variance_forecasts_lagged_one_day_66d.csv:target_end,True,
+clean text variance_forecasts_lagged_one_day_66d.csv:training_end,True,
+clean numeric variance_forecasts_lagged_one_day_66d.csv:horizon,True,
+clean text variance_forecasts_lagged_one_day_66d.csv:spec,True,
+clean text variance_forecasts_lagged_one_day_66d.csv:target_type,True,
+clean text variance_forecasts_lagged_one_day_66d.csv:option_signal,True,
+clean numeric variance_forecasts_lagged_one_day_66d.csv:n_train,True,
+clean numeric variance_forecasts_lagged_one_day_66d.csv:realized_variance,True,
+clean numeric variance_forecasts_lagged_one_day_66d.csv:vix,True,
+clean numeric variance_forecasts_lagged_one_day_66d.csv:vix3m,True,
+clean numeric variance_forecasts_lagged_one_day_66d.csv:term_variance,True,
+clean numeric variance_forecasts_lagged_one_day_66d.csv:forecast_mean,True,
+clean numeric variance_forecasts_lagged_one_day_66d.csv:forecast_q_raw,True,
+clean numeric variance_forecasts_lagged_one_day_66d.csv:forecast_q_mz,True,
+clean numeric variance_forecasts_lagged_one_day_66d.csv:forecast_har3,True,
+clean numeric variance_forecasts_lagged_one_day_66d.csv:forecast_har4,True,
+clean numeric variance_forecasts_lagged_one_day_66d.csv:forecast_harq,True,
+clean numeric variance_forecasts_lagged_one_day_66d.csv:forecast_harqts,True,
+clean run produced variance_forecasts_no_floor_66d.csv,True,
+clean shape variance_forecasts_no_floor_66d.csv,True,"(3076, 20) vs (3076, 20)"
+clean text variance_forecasts_no_floor_66d.csv:Date,True,
+clean numeric variance_forecasts_no_floor_66d.csv:position,True,
+clean text variance_forecasts_no_floor_66d.csv:target_end,True,
+clean text variance_forecasts_no_floor_66d.csv:training_end,True,
+clean numeric variance_forecasts_no_floor_66d.csv:horizon,True,
+clean text variance_forecasts_no_floor_66d.csv:spec,True,
+clean text variance_forecasts_no_floor_66d.csv:target_type,True,
+clean text variance_forecasts_no_floor_66d.csv:option_signal,True,
+clean numeric variance_forecasts_no_floor_66d.csv:n_train,True,
+clean numeric variance_forecasts_no_floor_66d.csv:realized_variance,True,
+clean numeric variance_forecasts_no_floor_66d.csv:vix,True,
+clean numeric variance_forecasts_no_floor_66d.csv:vix3m,True,
+clean numeric variance_forecasts_no_floor_66d.csv:term_variance,True,
+clean numeric variance_forecasts_no_floor_66d.csv:forecast_mean,True,
+clean numeric variance_forecasts_no_floor_66d.csv:forecast_q_raw,True,
+clean numeric variance_forecasts_no_floor_66d.csv:forecast_q_mz,True,
+clean numeric variance_forecasts_no_floor_66d.csv:forecast_har3,True,
+clean numeric variance_forecasts_no_floor_66d.csv:forecast_har4,True,
+clean numeric variance_forecasts_no_floor_66d.csv:forecast_harq,True,
+clean numeric variance_forecasts_no_floor_66d.csv:forecast_harqts,True,
+clean run produced variance_forecasts_rolling_five_year_66d.csv,True,
+clean shape variance_forecasts_rolling_five_year_66d.csv,True,"(3076, 20) vs (3076, 20)"
+clean text variance_forecasts_rolling_five_year_66d.csv:Date,True,
+clean numeric variance_forecasts_rolling_five_year_66d.csv:position,True,
+clean text variance_forecasts_rolling_five_year_66d.csv:target_end,True,
+clean text variance_forecasts_rolling_five_year_66d.csv:training_end,True,
+clean numeric variance_forecasts_rolling_five_year_66d.csv:horizon,True,
+clean text variance_forecasts_rolling_five_year_66d.csv:spec,True,
+clean text variance_forecasts_rolling_five_year_66d.csv:target_type,True,
+clean text variance_forecasts_rolling_five_year_66d.csv:option_signal,True,
+clean numeric variance_forecasts_rolling_five_year_66d.csv:n_train,True,
+clean numeric variance_forecasts_rolling_five_year_66d.csv:realized_variance,True,
+clean numeric variance_forecasts_rolling_five_year_66d.csv:vix,True,
+clean numeric variance_forecasts_rolling_five_year_66d.csv:vix3m,True,
+clean numeric variance_forecasts_rolling_five_year_66d.csv:term_variance,True,
+clean numeric variance_forecasts_rolling_five_year_66d.csv:forecast_mean,True,
+clean numeric variance_forecasts_rolling_five_year_66d.csv:forecast_q_raw,True,
+clean numeric variance_forecasts_rolling_five_year_66d.csv:forecast_q_mz,True,
+clean numeric variance_forecasts_rolling_five_year_66d.csv:forecast_har3,True,
+clean numeric variance_forecasts_rolling_five_year_66d.csv:forecast_har4,True,
+clean numeric variance_forecasts_rolling_five_year_66d.csv:forecast_harq,True,
+clean numeric variance_forecasts_rolling_five_year_66d.csv:forecast_harqts,True,
+clean run produced variance_forecasts_wrong_maturity_vix_66_66d.csv,True,
+clean shape variance_forecasts_wrong_maturity_vix_66_66d.csv,True,"(3076, 20) vs (3076, 20)"
+clean text variance_forecasts_wrong_maturity_vix_66_66d.csv:Date,True,
+clean numeric variance_forecasts_wrong_maturity_vix_66_66d.csv:position,True,
+clean text variance_forecasts_wrong_maturity_vix_66_66d.csv:target_end,True,
+clean text variance_forecasts_wrong_maturity_vix_66_66d.csv:training_end,True,
+clean numeric variance_forecasts_wrong_maturity_vix_66_66d.csv:horizon,True,
+clean text variance_forecasts_wrong_maturity_vix_66_66d.csv:spec,True,
+clean text variance_forecasts_wrong_maturity_vix_66_66d.csv:target_type,True,
+clean text variance_forecasts_wrong_maturity_vix_66_66d.csv:option_signal,True,
+clean numeric variance_forecasts_wrong_maturity_vix_66_66d.csv:n_train,True,
+clean numeric variance_forecasts_wrong_maturity_vix_66_66d.csv:realized_variance,True,
+clean numeric variance_forecasts_wrong_maturity_vix_66_66d.csv:vix,True,
+clean numeric variance_forecasts_wrong_maturity_vix_66_66d.csv:vix3m,True,
+clean numeric variance_forecasts_wrong_maturity_vix_66_66d.csv:term_variance,True,
+clean numeric variance_forecasts_wrong_maturity_vix_66_66d.csv:forecast_mean,True,
+clean numeric variance_forecasts_wrong_maturity_vix_66_66d.csv:forecast_q_raw,True,
+clean numeric variance_forecasts_wrong_maturity_vix_66_66d.csv:forecast_q_mz,True,
+clean numeric variance_forecasts_wrong_maturity_vix_66_66d.csv:forecast_har3,True,
+clean numeric variance_forecasts_wrong_maturity_vix_66_66d.csv:forecast_har4,True,
+clean numeric variance_forecasts_wrong_maturity_vix_66_66d.csv:forecast_harq,True,
+clean numeric variance_forecasts_wrong_maturity_vix_66_66d.csv:forecast_harqts,True,
+clean run produced variance_model_results.csv,True,
+clean shape variance_model_results.csv,True,"(21, 12) vs (21, 12)"
+clean numeric variance_model_results.csv:horizon,True,
+clean text variance_model_results.csv:spec,True,
+clean text variance_model_results.csv:target_type,True,
+clean text variance_model_results.csv:model,True,
+clean numeric variance_model_results.csv:n,True,
+clean text variance_model_results.csv:start,True,
+clean text variance_model_results.csv:end,True,
+clean numeric variance_model_results.csv:oos_r2,True,
+clean numeric variance_model_results.csv:rmse,True,
+clean numeric variance_model_results.csv:mae,True,
+clean numeric variance_model_results.csv:mean_realized,True,
+clean numeric variance_model_results.csv:mean_forecast,True,
+clean figure Figure_1_Variance_OOS_R2.png,True,
+clean figure Figure_2_Incremental_Option_R2.png,True,
+clean figure Figure_3_Rolling_Incremental_Loss.png,True,
+clean figure Figure_4_Fund_Heterogeneity.png,True,

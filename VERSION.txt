@@ -1,0 +1,4 @@
+SSRN companion replication package
+Version 2.1
+Substantially revised August 2026
+SSRN DOI: 10.2139/ssrn.7119799

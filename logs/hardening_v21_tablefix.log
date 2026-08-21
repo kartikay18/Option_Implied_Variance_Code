@@ -1,0 +1,22 @@
+V2.1 hardening analyses completed
+
+66-day alternative-loss comparisons:
+                   comparison  loss  mean_loss_gain_a_over_b     hac_t    hac_p  block_p
+      MZ option vs raw option   MSE                 0.000041  2.332038 0.019699   0.0240
+      MZ option vs raw option   MAE                 0.002631  4.594407 0.000004   0.0002
+      MZ option vs raw option QLIKE                -0.008487 -0.094119 0.925015   0.9218
+          MZ option vs HAR(4)   MSE                 0.000006  1.337683 0.181000   0.1550
+          MZ option vs HAR(4)   MAE                 0.000428  1.774002 0.076063   0.0680
+          MZ option vs HAR(4) QLIKE                 1.304004  1.107919 0.267897   0.1966
+HAR + option + term vs HAR(4)   MSE                 0.000005  1.108965 0.267445   0.2494
+HAR + option + term vs HAR(4)   MAE                 0.000126  1.011967 0.311554   0.2970
+HAR + option + term vs HAR(4) QLIKE                -0.324005 -0.978204 0.327973   0.4150
+
+66-day calibration diagnostics:
+ model  mean_forecast_to_realized_ratio  squared_bias_share_of_mse  correlation    oos_r2
+ q_raw                         1.431479                   0.060832     0.245305 -0.204101
+  q_mz                         0.882598                   0.005790     0.206559  0.063394
+  har4                         0.886824                   0.005167     0.213200  0.024633
+harqts                         0.835266                   0.011352     0.236960  0.059498
+
+Maximum scale-invariance difference: 4.440892098500626e-16

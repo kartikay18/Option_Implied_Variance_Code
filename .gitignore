@@ -1,0 +1,34 @@
+# Licensed or otherwise non-redistributable inputs.
+data/*
+!data/INPUT_HASHES.txt
+**/market_data.csv
+**/rates.csv
+
+# Row-level outputs that contain or can reversibly encode source market series.
+results/variance_forecasts*.csv
+results/fund_forecasts_*.csv
+results/recursive_coefficients.csv
+results/rolling_loss_66d.csv
+
+# Private/full-package verification artifacts.
+verification_v21/clean_run_v21/
+verification_v21/clean_run_v21.log
+verification_v21/anonymous_pdf_text.txt
+paper/
+private/
+
+# Credentials and local configuration.
+.env
+.env.*
+!.env.example
+*.key
+*.pem
+
+# Python and operating-system artifacts.
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.mypy_cache/
+.venv/
+venv/
+.DS_Store

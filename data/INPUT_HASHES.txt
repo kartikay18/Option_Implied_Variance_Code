@@ -1,0 +1,2 @@
+market_data.csv  54e965d435da3b26ecc50cb6df7bc193d6b66a9b202837b9d2002a9e7384c715
+rates.csv        b73beaedaaf92394adf94ed7de7660ccf52e8ca5ae63a8cb6c69edb0ad29f461

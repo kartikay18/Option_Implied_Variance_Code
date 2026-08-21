@@ -1,0 +1,15 @@
+check,value,pass
+rows,4023,True
+start,2010-01-04,True
+end,2025-12-30,True
+monotonic,True,True
+duplicates,0,True
+missing_market,0,True
+missing_rates,0,True
+positive,True,True
+vix_peak_date,2020-03-16,True
+spy_worst_date,2020-03-16,True
+daily_beta_SSO,2.006948142100201,True
+daily_beta_UPRO,3.0187037240810137,True
+daily_beta_SDS,-1.9897068727948073,True
+daily_beta_SPXU,-2.969851567729583,True

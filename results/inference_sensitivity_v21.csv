@@ -1,0 +1,49 @@
+horizon,comparison,model_a,model_b,method,parameter,n,mean_loss_gain_a_over_b,statistic,p_value
+5,MZ option vs raw option,q_mz,q_raw,HAC,4,3198,-1.5357638843916522e-07,-2.120606755922929,0.03395490912396865
+5,MZ option vs raw option,q_mz,q_raw,HAC,10,3198,-1.5357638843916522e-07,-1.5652457353873297,0.11752530144241637
+5,MZ option vs raw option,q_mz,q_raw,circular_block_bootstrap,4,3198,-1.5357638843916522e-07,,0.0238
+5,MZ option vs raw option,q_mz,q_raw,circular_block_bootstrap,10,3198,-1.5357638843916522e-07,,0.0874
+5,MZ option vs HAR(4),q_mz,har4,HAC,4,3198,5.645052980233474e-07,0.8935306374364885,0.37157307269885875
+5,MZ option vs HAR(4),q_mz,har4,HAC,10,3198,5.645052980233474e-07,0.9634258057968541,0.3353338811085451
+5,MZ option vs HAR(4),q_mz,har4,circular_block_bootstrap,4,3198,5.645052980233474e-07,,0.3546
+5,MZ option vs HAR(4),q_mz,har4,circular_block_bootstrap,10,3198,5.645052980233474e-07,,0.3278
+5,HAR + option + term vs HAR(4),harqts,har4,HAC,4,3198,4.233173419778255e-07,1.7066516624479733,0.08788681662487616
+5,HAR + option + term vs HAR(4),harqts,har4,HAC,10,3198,4.233173419778255e-07,1.5246290034149113,0.1273516590277517
+5,HAR + option + term vs HAR(4),harqts,har4,circular_block_bootstrap,4,3198,4.233173419778255e-07,,0.0506
+5,HAR + option + term vs HAR(4),harqts,har4,circular_block_bootstrap,10,3198,4.233173419778255e-07,,0.0808
+22,MZ option vs raw option,q_mz,q_raw,HAC,21,3164,-1.528614759934859e-07,-0.0703680691638706,0.9439007053436341
+22,MZ option vs raw option,q_mz,q_raw,HAC,27,3164,-1.528614759934859e-07,-0.07274927102046178,0.9420056397866297
+22,MZ option vs raw option,q_mz,q_raw,HAC,44,3164,-1.528614759934859e-07,-0.07819819331271721,0.9376703991462128
+22,MZ option vs raw option,q_mz,q_raw,circular_block_bootstrap,21,3164,-1.528614759934859e-07,,0.9522
+22,MZ option vs raw option,q_mz,q_raw,circular_block_bootstrap,27,3164,-1.528614759934859e-07,,0.9536
+22,MZ option vs raw option,q_mz,q_raw,circular_block_bootstrap,44,3164,-1.528614759934859e-07,,0.9362
+22,MZ option vs HAR(4),q_mz,har4,HAC,21,3164,1.2583038417972805e-06,1.331881848084174,0.18289901670717357
+22,MZ option vs HAR(4),q_mz,har4,HAC,27,3164,1.2583038417972805e-06,1.4122980884684657,0.15786220901989623
+22,MZ option vs HAR(4),q_mz,har4,HAC,44,3164,1.2583038417972805e-06,1.4405214835852396,0.14971991635766896
+22,MZ option vs HAR(4),q_mz,har4,circular_block_bootstrap,21,3164,1.2583038417972805e-06,,0.1662
+22,MZ option vs HAR(4),q_mz,har4,circular_block_bootstrap,27,3164,1.2583038417972805e-06,,0.1468
+22,MZ option vs HAR(4),q_mz,har4,circular_block_bootstrap,44,3164,1.2583038417972805e-06,,0.135
+22,HAR + option + term vs HAR(4),harqts,har4,HAC,21,3164,1.702646752471472e-06,1.5971070255656492,0.11024185240089499
+22,HAR + option + term vs HAR(4),harqts,har4,HAC,27,3164,1.702646752471472e-06,1.5120457703257868,0.13052221915807868
+22,HAR + option + term vs HAR(4),harqts,har4,HAC,44,3164,1.702646752471472e-06,1.3400589469562794,0.18022618143431124
+22,HAR + option + term vs HAR(4),harqts,har4,circular_block_bootstrap,21,3164,1.702646752471472e-06,,0.0934
+22,HAR + option + term vs HAR(4),harqts,har4,circular_block_bootstrap,27,3164,1.702646752471472e-06,,0.1108
+22,HAR + option + term vs HAR(4),harqts,har4,circular_block_bootstrap,44,3164,1.702646752471472e-06,,0.1688
+66,MZ option vs raw option,q_mz,q_raw,HAC,65,3076,4.148197018028566e-05,2.3494350775642294,0.018801922665951706
+66,MZ option vs raw option,q_mz,q_raw,HAC,71,3076,4.148197018028566e-05,2.332038287880156,0.01969867703317469
+66,MZ option vs raw option,q_mz,q_raw,HAC,132,3076,4.148197018028566e-05,2.20432670874113,0.027501375908893035
+66,MZ option vs raw option,q_mz,q_raw,circular_block_bootstrap,65,3076,4.148197018028566e-05,,0.0198
+66,MZ option vs raw option,q_mz,q_raw,circular_block_bootstrap,71,3076,4.148197018028566e-05,,0.0246
+66,MZ option vs raw option,q_mz,q_raw,circular_block_bootstrap,132,3076,4.148197018028566e-05,,0.0244
+66,MZ option vs HAR(4),q_mz,har4,HAC,65,3076,6.01092732530204e-06,1.3139445350461831,0.1888648701314659
+66,MZ option vs HAR(4),q_mz,har4,HAC,71,3076,6.01092732530204e-06,1.33768337455182,0.18099967282607166
+66,MZ option vs HAR(4),q_mz,har4,HAC,132,3076,6.01092732530204e-06,1.4675574290955522,0.14222447883028522
+66,MZ option vs HAR(4),q_mz,har4,circular_block_bootstrap,65,3076,6.01092732530204e-06,,0.1606
+66,MZ option vs HAR(4),q_mz,har4,circular_block_bootstrap,71,3076,6.01092732530204e-06,,0.1488
+66,MZ option vs HAR(4),q_mz,har4,circular_block_bootstrap,132,3076,6.01092732530204e-06,,0.1252
+66,HAR + option + term vs HAR(4),harqts,har4,HAC,65,3076,5.406840624813924e-06,1.1187728445930316,0.26323705939642816
+66,HAR + option + term vs HAR(4),harqts,har4,HAC,71,3076,5.406840624813924e-06,1.1089652979533786,0.26744515255095447
+66,HAR + option + term vs HAR(4),harqts,har4,HAC,132,3076,5.406840624813924e-06,1.0815440523416795,0.2794551761134998
+66,HAR + option + term vs HAR(4),harqts,har4,circular_block_bootstrap,65,3076,5.406840624813924e-06,,0.248
+66,HAR + option + term vs HAR(4),harqts,har4,circular_block_bootstrap,71,3076,5.406840624813924e-06,,0.2648
+66,HAR + option + term vs HAR(4),harqts,har4,circular_block_bootstrap,132,3076,5.406840624813924e-06,,0.2822
