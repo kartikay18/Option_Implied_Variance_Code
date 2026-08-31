@@ -51,9 +51,5 @@ The precomputed audit summary under `verification_v21/` records the completed fu
 The analysis is scoped to the S&P 500/VIX complex. It uses SPY as the realized-variance proxy while VIX and VIX3M are SPX-option indices, adjusted market prices rather than sponsor NAVs, and daily return-based variance measures rather than intraday realized variance. VIX9D, Nasdaq-100/VXN, sponsor NAV, and intraday extensions are not implemented. The manuscript states these limitations explicitly.
 
 
-## Working-paper record
+- SSRN abstract ID: 7325618
 
-- SSRN abstract ID: 7119799
-- DOI: 10.2139/ssrn.7119799
-- Working-paper title: *When Does Option-Implied Variance Add to Physical Forecasts? Evidence from S&P 500 Leveraged ETF Drag*
-- Version: substantially revised August 2026
